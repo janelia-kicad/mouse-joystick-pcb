@@ -625,44 +625,8 @@
       "microcontroller"
     ],
     [
-      "15f16b10-a579-4b56-9391-bdcce7843843",
-      "motor"
-    ],
-    [
-      "015fc9e7-3ba8-423b-8c7a-1e6ac6af06ca",
-      "mosfet3"
-    ],
-    [
-      "33c1e78d-612d-4de4-b4ab-c1f2402fd86d",
-      "mosfet7"
-    ],
-    [
-      "e5ac0a82-cfa0-413a-a1a3-5e88ae5fe4fa",
-      "mosfet5"
-    ],
-    [
-      "166b4ba4-5822-49d8-b309-f52ce04f60b1",
-      "mosfet1"
-    ],
-    [
-      "310c6d75-c755-45f6-91bd-c6a3e28c41c3",
-      "mosfet6"
-    ],
-    [
-      "77ec754f-e73d-4b40-8cb6-04aa79ed075b",
-      "mosfet2"
-    ],
-    [
-      "3cc889de-698d-4e8a-bf98-2840b1fad77e",
-      "mosfet8"
-    ],
-    [
-      "3a5be366-e07c-4cea-9d17-ab6873df58d0",
-      "mosfet4"
-    ],
-    [
-      "55bed33a-55a5-42ce-a682-6bcd66619d61",
-      "encoder1"
+      "843743ad-cb97-4017-b3d5-10e69a46da88",
+      "motor-0"
     ]
   ],
   "text_variables": {}
