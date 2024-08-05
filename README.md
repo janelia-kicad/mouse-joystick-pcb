@@ -1,54 +1,59 @@
-- [Repository Info](#org5d2898b)
-- [Images](#org4d0c5dd)
-- [Schematic](#org581781c)
-- [PCB](#org5e65b5d)
-- [Bill of Materials](#org396092e)
-- [Development](#orge0a58d9)
+- [Repository Info](#orga1a6088)
+- [Images](#org3d558c7)
+- [Schematic](#orgbc6d7b6)
+- [PCB](#org3f950dd)
+- [Bill of Materials](#org1d80a5f)
+- [Notes](#orga1039cb)
+- [Development](#org57bd091)
 
     <!-- This file is generated automatically from metadata -->
     <!-- File edits may be overwritten! -->
 
 
-<a id="org5d2898b"></a>
+<a id="orga1a6088"></a>
 
 # Repository Info
 
--   Project Name: wrex-pcb
--   Synopsis: PCB for the wrist exoskeleton project for the Gallego Lab at Imperial College London.
+-   Project Name: mouse-joystick-pcb
+-   Synopsis: Janelia Dudman lab PCB for the mouse joystick rig.
 -   Documentation Version: 1.0.0
 -   Pcb Version: 1.0
 -   Enclosure Version: 1.0
 -   Supplemental BOM Version: 1.0
--   Release Date: 2024-07-27
--   Creation Date: 2024-07-27
+-   Release Date: 2024-08-05
+-   Creation Date: 2017-08-14
 -   Kicad Version: 7.0.11
--   License: GPL-3.0
--   URL: <https://github.com/peterpolidoro/wrex-pcb>
+-   License: BSD-3-Clause
+-   URL: <https://github.com/janelia-kicad/mouse-joystick-pcb>
 -   Author: Peter Polidoro
 -   Email: peter@polidoro.io
--   Copyright: 2024 Peter Polidoro
+-   Copyright: 2024 Howard Hughes Medical Institute
 -   References:
-    -
+    -   <https://www.transducertechniques.com/rts-torque-sensor.aspx>
+    -   <https://placidindustries.com/products/brakes/magnetic-particle-brakes/magnetic-particle-brake-b5z/>
+    -   <https://www.newark.com/broadcom-limited/hedr-5421-ep111/encoder-incremental-2-ch/dp/58Y4773>
+    -   <https://www.linengineering.com/products/stepper-motors/hybrid-stepper-motors/208-series/208-13-01/WO-208-13-01D>
+    -   <https://www.pololu.com/product/2267>
 
 ![img](./documentation/pcb/pcb.png)
 
 
-<a id="org4d0c5dd"></a>
+<a id="org3d558c7"></a>
 
 # Images
 
 
-<a id="org581781c"></a>
+<a id="orgbc6d7b6"></a>
 
 # Schematic
 
 
-<a id="org5e65b5d"></a>
+<a id="org3f950dd"></a>
 
 # PCB
 
 
-<a id="org396092e"></a>
+<a id="org1d80a5f"></a>
 
 # Bill of Materials
 
@@ -86,7 +91,57 @@
 |      | Supplemental BOM Version: 1.0   |                          |                 |          | Total | 11.58 |
 
 
-<a id="orge0a58d9"></a>
+<a id="orga1039cb"></a>
+
+# Notes
+
+
+## Actuators
+
+
+### Stepper Motors
+
+1.  Big
+
+    SOYO SY42STH38-1684A
+
+2.  Little
+
+    Lin Engineering WO-208-13-01D-RO
+
+
+### Brake
+
+Placid Industries B5Z-24-1R Magnetic Particle Brake
+
+-   Current control 0-0.049 A at 24 V
+
+
+## Sensors
+
+
+### Torque Sensor
+
+Transducer Techniques RTS-5
+
+-   wheatstone bridge
+
+
+### Encoder
+
+Newark HEDR-5421-EP111
+
+-   Two channel quadrature
+
+
+### Limit Switches
+
+MiSUMi D2F-01FL
+
+-   Normally open or normally closed
+
+
+<a id="org57bd091"></a>
 
 # Development
 
