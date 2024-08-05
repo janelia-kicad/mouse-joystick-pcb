@@ -1,0 +1,24 @@
+# This file is generated automatically from metadata
+# File edits may be overwritten!
+- Project Name: mouse-joystick-pcb
+- Synopsis: Janelia Dudman lab PCB for the mouse joystick rig.
+- Documentation Version: 1.0.0
+- Pcb Version: 1.0
+- Enclosure Version: 1.0
+- Supplemental BOM Version: 1.0
+- Release Date: 2024-08-05
+- Creation Date: 2017-08-14
+- Kicad Version: 7.0.11
+- License: BSD-3-Clause
+- URL: https://github.com/janelia-kicad/mouse-joystick-pcb
+- Author: Peter Polidoro
+- Email: peter@polidoro.io
+- Copyright: 2024 Howard Hughes Medical Institute
+- References:
+  - https://www.transducertechniques.com/rts-torque-sensor.aspx
+  - https://placidindustries.com/products/brakes/magnetic-particle-brakes/magnetic-particle-brake-b5z/
+  - https://www.newark.com/broadcom-limited/hedr-5421-ep111/encoder-incremental-2-ch/dp/58Y4773
+  - https://www.linengineering.com/products/stepper-motors/hybrid-stepper-motors/208-series/208-13-01/WO-208-13-01D
+  - https://www.pololu.com/product/2267
+
+[[./documentation/pcb/pcb.png]]
