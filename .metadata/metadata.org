@@ -391,6 +391,12 @@ MiSUMi D2F-01FL
 
 ** Generate Output from KiCad
 
+*** Remove previous versions
+
+#+BEGIN_SRC sh
+rm -rf ./documentation/3dmodels/* && rm -rf ./documentation/bom/* && rm -rf ./documentation/fabrication/* && rm -rf ./documentation/pcb/* && rm -rf ./documentation/schematic/*pcb
+#+END_SRC
+
 *** Images
 
 **** 3D Viewer
@@ -512,7 +518,7 @@ Options:
 Zip gerber files
 
 #+BEGIN_EXAMPLE
-zip gerbers.zip gerbers/*
+zip ./documentation/fabrication/gerbers.zip ./documentation/fabrication/gerbers/*
 #+END_EXAMPLE
 
 **** BOM
