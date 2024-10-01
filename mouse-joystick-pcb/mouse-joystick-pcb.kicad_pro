@@ -627,6 +627,10 @@
     [
       "843743ad-cb97-4017-b3d5-10e69a46da88",
       "motor-0"
+    ],
+    [
+      "3ad4effc-6f5c-46f5-ab22-93378768066e",
+      "audio"
     ]
   ],
   "text_variables": {}
