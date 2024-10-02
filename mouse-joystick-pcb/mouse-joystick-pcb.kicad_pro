@@ -631,6 +631,14 @@
     [
       "3ad4effc-6f5c-46f5-ab22-93378768066e",
       "audio"
+    ],
+    [
+      "2a7fc1c1-17fb-44db-bbed-eea6ab177680",
+      "motor-1"
+    ],
+    [
+      "cc53e4cb-28ca-4497-a17f-97087cae7de9",
+      "brake"
     ]
   ],
   "text_variables": {}
