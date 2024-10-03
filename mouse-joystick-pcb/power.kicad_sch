@@ -976,7 +976,7 @@
   (symbol (lib_id "Janelia:C_3.3uF_50V_1210") (at 80.01 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ba107e1-ddfa-43ad-8207-287dba6cf1ac)
-    (property "Reference" "C14" (at 82.55 119.38 0)
+    (property "Reference" "C301" (at 82.55 119.38 0)
       (effects (font (size 1.016 1.016)) (justify left))
     )
     (property "Value" "3.3uF_50V" (at 82.55 121.92 0)
@@ -1014,7 +1014,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "C14") (unit 1)
+          (reference "C301") (unit 1)
         )
       )
     )
@@ -1023,7 +1023,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 130.81 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28ef21f2-6dd1-4e4e-9ad1-165becd4568a)
-    (property "Reference" "#FLG01" (at 130.81 43.815 0)
+    (property "Reference" "#FLG0301" (at 130.81 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 130.81 41.91 0)
@@ -1039,7 +1039,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG0301") (unit 1)
         )
       )
     )
@@ -1048,7 +1048,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 165.1 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3c9010c7-c376-41d4-9faa-3ccd604471da)
-    (property "Reference" "#FLG04" (at 165.1 43.815 0)
+    (property "Reference" "#FLG0304" (at 165.1 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 165.1 41.91 0)
@@ -1064,7 +1064,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "#FLG04") (unit 1)
+          (reference "#FLG0304") (unit 1)
         )
       )
     )
@@ -1073,7 +1073,7 @@
   (symbol (lib_id "Janelia:D_50V_15A") (at 165.1 67.31 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6dc99085-2db8-4497-bc29-a502c3215383)
-    (property "Reference" "D1" (at 165.1 60.96 0)
+    (property "Reference" "D301" (at 165.1 60.96 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "D_50V_15A" (at 165.1 63.5 0)
@@ -1120,7 +1120,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "D1") (unit 1)
+          (reference "D301") (unit 1)
         )
       )
     )
@@ -1129,7 +1129,7 @@
   (symbol (lib_id "Janelia:C_1uF_25V_0402") (at 109.22 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 715d2d06-16e2-4174-ba8a-d31232d134cf)
-    (property "Reference" "C16" (at 111.76 119.38 0)
+    (property "Reference" "C303" (at 111.76 119.38 0)
       (effects (font (size 1.016 1.016)) (justify left))
     )
     (property "Value" "1uF_25V" (at 111.76 121.92 0)
@@ -1167,7 +1167,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "C16") (unit 1)
+          (reference "C303") (unit 1)
         )
       )
     )
@@ -1176,7 +1176,7 @@
   (symbol (lib_id "Janelia:LED_KNB_20mA_RED_1.95V_0402") (at 187.96 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83b9b3f1-1910-4a05-a0ac-a8841b200eb6)
-    (property "Reference" "D2" (at 191.77 72.7075 90)
+    (property "Reference" "D302" (at 191.77 72.7075 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED_RED" (at 191.77 75.2475 90)
@@ -1214,7 +1214,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "D2") (unit 1)
+          (reference "D302") (unit 1)
         )
       )
     )
@@ -1223,7 +1223,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 153.67 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 878872a2-dd99-4d45-9bb6-2ad51b214bf6)
-    (property "Reference" "#FLG03" (at 153.67 43.815 0)
+    (property "Reference" "#FLG0303" (at 153.67 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 153.67 41.91 0)
@@ -1239,7 +1239,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "#FLG03") (unit 1)
+          (reference "#FLG0303") (unit 1)
         )
       )
     )
@@ -1248,7 +1248,7 @@
   (symbol (lib_id "Janelia:C_47uF_10V_0805") (at 208.28 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9fc57e01-f5c8-4aab-89de-b0e3e97b3c66)
-    (property "Reference" "C18" (at 210.82 118.11 0)
+    (property "Reference" "C305" (at 210.82 118.11 0)
       (effects (font (size 1.016 1.016)) (justify left))
     )
     (property "Value" "47uF_10V" (at 210.82 120.65 0)
@@ -1286,7 +1286,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "C18") (unit 1)
+          (reference "C305") (unit 1)
         )
       )
     )
@@ -1295,7 +1295,7 @@
   (symbol (lib_id "Janelia:C_1uF_25V_0402") (at 195.58 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab3e0374-bbe0-4e98-92f7-45bedeb97b4f)
-    (property "Reference" "C17" (at 198.12 118.11 0)
+    (property "Reference" "C304" (at 198.12 118.11 0)
       (effects (font (size 1.016 1.016)) (justify left))
     )
     (property "Value" "1uF_25V" (at 198.12 120.65 0)
@@ -1333,7 +1333,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "C17") (unit 1)
+          (reference "C304") (unit 1)
         )
       )
     )
@@ -1342,7 +1342,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 142.24 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab83b6b6-dd0e-4b6e-907f-e624f4185087)
-    (property "Reference" "#FLG02" (at 142.24 43.815 0)
+    (property "Reference" "#FLG0302" (at 142.24 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 142.24 41.91 0)
@@ -1358,7 +1358,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG0302") (unit 1)
         )
       )
     )
@@ -1367,7 +1367,7 @@
   (symbol (lib_id "Janelia:R_2.32k_1W_0805") (at 187.96 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ae97a1a4-c0e0-45ac-b1d0-b6f77f7cf7a9)
-    (property "Reference" "R3" (at 190.5 59.69 90)
+    (property "Reference" "R301" (at 190.5 59.69 90)
       (effects (font (size 1.016 1.016)))
     )
     (property "Value" "2.32k" (at 188.1378 59.6646 90) (do_not_autoplace)
@@ -1405,7 +1405,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "R3") (unit 1)
+          (reference "R301") (unit 1)
         )
       )
     )
@@ -1414,7 +1414,7 @@
   (symbol (lib_id "Janelia:TPSM365R6V5RDNR") (at 156.21 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e5adb79c-cd82-44dd-b6a9-32030b1f8b83)
-    (property "Reference" "U3" (at 172.72 105.41 0) (do_not_autoplace)
+    (property "Reference" "U301" (at 172.72 105.41 0) (do_not_autoplace)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "TPSM365R6V5RDNR" (at 156.21 121.92 0) (do_not_autoplace)
@@ -1461,7 +1461,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "U3") (unit 1)
+          (reference "U301") (unit 1)
         )
       )
     )
@@ -1470,7 +1470,7 @@
   (symbol (lib_id "Janelia:C_0.1uF_100V_0402") (at 92.71 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eabb99cb-579d-44ed-a353-c462dd6a21ce)
-    (property "Reference" "C15" (at 95.25 119.38 0)
+    (property "Reference" "C302" (at 95.25 119.38 0)
       (effects (font (size 1.016 1.016)) (justify left))
     )
     (property "Value" "0.1uF_100V" (at 95.25 121.92 0)
@@ -1508,7 +1508,7 @@
     (instances
       (project "mouse-joystick-pcb"
         (path "/df2b2e89-e055-4140-95de-f1df723db034/c1dd8f61-494c-402f-8e59-08309c64fc3f"
-          (reference "C15") (unit 1)
+          (reference "C302") (unit 1)
         )
       )
     )
