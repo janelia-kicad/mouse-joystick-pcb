@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "mouse-joystick-pcb")
+    (date "2024-10-07")
+    (rev "1.0")
+    (company "Peter Polidoro")
+  )
+
   (lib_symbols
     (symbol "Janelia:Amplifier_Audio_TPA6204A1DRBR" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 15.24 11.43 0) (do_not_autoplace)
