@@ -99,6 +99,23 @@
     )
   )
 
+  (sheet (at 161.29 52.07) (size 24.13 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2c13ac4d-b7a1-4ccc-acc2-0e2943500234)
+    (property "Sheetname" "torque-sensor" (at 161.29 51.3584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "torque-sensor.kicad_sch" (at 161.29 67.8946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "mouse-joystick-pcb"
+        (path "/df2b2e89-e055-4140-95de-f1df723db034" (page "9"))
+      )
+    )
+  )
+
   (sheet (at 43.18 63.5) (size 15.24 10.16) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))

@@ -639,6 +639,10 @@
     [
       "cc53e4cb-28ca-4497-a17f-97087cae7de9",
       "brake"
+    ],
+    [
+      "2c13ac4d-b7a1-4ccc-acc2-0e2943500234",
+      "torque-sensor"
     ]
   ],
   "text_variables": {}
