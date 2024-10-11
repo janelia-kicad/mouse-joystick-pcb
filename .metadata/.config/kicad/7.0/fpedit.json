@@ -71,7 +71,7 @@
       "lockedItems": false,
       "otherItems": false,
       "pads": false,
-      "text": false,
+      "text": true,
       "tracks": false,
       "vias": false,
       "zones": false
@@ -99,7 +99,7 @@
     "version": 2
   },
   "pcb_display": {
-    "active_layer_preset": "",
+    "active_layer_preset": "All Layers",
     "layer_presets": []
   },
   "printing": {
