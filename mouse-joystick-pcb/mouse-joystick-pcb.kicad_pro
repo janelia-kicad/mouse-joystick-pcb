@@ -513,52 +513,12 @@
         "pattern": "/GND"
       },
       {
-        "netclass": "Power",
-        "pattern": "/power/VAA"
-      },
-      {
-        "netclass": "High Current",
-        "pattern": "/prism*/VBB"
+        "netclass": "Super Power",
+        "pattern": "/brake/IOUT"
       },
       {
         "netclass": "Super Power",
-        "pattern": "/prism*/VCC"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "/ENABLE_VCC"
-      },
-      {
-        "netclass": "Super Power",
-        "pattern": "*VSYS"
-      },
-      {
-        "netclass": "Super Power",
-        "pattern": "/power/VBB"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/VCC"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "*ENABLE*"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "/RX"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "/TX"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "/prism*/SWP"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "/prism*/SWN"
+        "pattern": "*BM*"
       }
     ]
   },
