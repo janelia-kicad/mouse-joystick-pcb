@@ -236,12 +236,11 @@ Hello $addressee
 |------+--------------------------------------------------------+--------------------------+-----------------+----------+-------+-------|
 |    1 | TERM BLOCK PLUG 2POS STR 5.08MM                        |                  1758364 | Phoenix Contact |        1 |  1.63 |  1.63 |
 |    2 | W5100S-EVB-PICO RP2040 W5100S                          |          W5100S-EVB-PICO | WIZnet          |        1 |  9.95 |  9.95 |
-|    3 | TERM BLOCK PLUG 5POS STR 3.5MM                         |                  1840395 | Phoenix Contact |        1 |  4.78 |  4.78 |
-|    4 | TERM BLOCK PLUG 4POS STR 3.5MM                         |                  1840382 | Phoenix Contact |        2 |  6.27 | 12.54 |
-|    5 | TERM BLOCK PLUG 2POS STR 3.5MM                         |                  1840366 | Phoenix Contact |        2 |  3.83 |  7.66 |
-|    6 | PICOBLADE 5 CIRCUIT 300MM                              |               0151340503 | Molex           |        1 |  5.18 |  5.18 |
+|    3 | TERM BLOCK PLUG 4POS STR 3.5MM                         |                  1840382 | Phoenix Contact |        2 |  6.27 | 12.54 |
+|    4 | TERM BLOCK PLUG 2POS STR 3.5MM                         |                  1840366 | Phoenix Contact |        2 |  3.83 |  7.66 |
+|    5 | PICOBLADE 5 CIRCUIT 300MM                              |               0151340503 | Molex           |        1 |  5.18 |  5.18 |
 |------+--------------------------------------------------------+--------------------------+-----------------+----------+-------+-------|
-|    7 | Supplemental BOM Version: <<supplemental-bom-version>> |                          |                 |          | Total | 41.74 |
+|    6 | Supplemental BOM Version: <<supplemental-bom-version>> |                          |                 |          | Total | 36.96 |
 ,#+TBLFM: $1=@#-1::$7=$5*$6;%0.2f::@>$7=vsum(@2..@-1);%0.2f
 #+END_SRC
 
