@@ -519,6 +519,10 @@
       {
         "netclass": "Super Power",
         "pattern": "*BM*"
+      },
+      {
+        "netclass": "High Current",
+        "pattern": "/power/VAA"
       }
     ]
   },
