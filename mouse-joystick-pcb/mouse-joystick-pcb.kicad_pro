@@ -590,7 +590,7 @@
     ],
     [
       "843743ad-cb97-4017-b3d5-10e69a46da88",
-      "motor-0"
+      "joystick-motor"
     ],
     [
       "3ad4effc-6f5c-46f5-ab22-93378768066e",
@@ -598,7 +598,7 @@
     ],
     [
       "2a7fc1c1-17fb-44db-bbed-eea6ab177680",
-      "motor-1"
+      "base-motor"
     ],
     [
       "cc53e4cb-28ca-4497-a17f-97087cae7de9",
