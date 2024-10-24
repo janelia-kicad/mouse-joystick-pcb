@@ -4,19 +4,23 @@
 * Supplemental BOM
 - Project Name: mouse-joystick-pcb
 - Synopsis: Janelia Dudman lab PCB for the mouse joystick rig.
-- Release Date: 2024-08-05
+- Release Date: 2024-10-24
 - URL: https://github.com/janelia-kicad/mouse-joystick-pcb
 - Author: Peter Polidoro
 - Email: peter@polidoro.io
 #+BEGIN_TABLE
 #+LATEX: \adjustbox{max width=\linewidth}{
 #+ATTR_LATEX: :center nil
-| Item | Synopsis                                               | Manufacturer Part Number | Manufacturer    | Quantity |  Cost | Total |
-|------+--------------------------------------------------------+--------------------------+-----------------+----------+-------+-------|
-|    1 | TERM BLOCK PLUG 2POS STR 5.08MM                        | 1758364                  | Phoenix Contact |        1 |  1.63 |  1.63 |
-|    2 | W5100S-EVB-PICO RP2040 W5100S                          | W5100S-EVB-PICO          | WIZnet          |        1 |  9.95 |  9.95 |
-|------+--------------------------------------------------------+--------------------------+-----------------+----------+-------+-------|
-|      | Supplemental BOM Version: 1.0 |                          |                 |          | Total | 11.58 |
-#+TBLFM: $7=$5*$6;%0.2f::@>$7=vsum(@2..@-1);%0.2f
+| Item | Synopsis                                               | Manufacturer Part Number | Manufacturer         | Quantity |  Cost | Total |
+|------+--------------------------------------------------------+--------------------------+----------------------+----------+-------+-------|
+|    1 | AC/DC DESKTOP ADAPTER 24V 65W                          | SDI65-24-UC-P5           | CUI Inc.             |        1 | 29.26 | 29.26 |
+|    2 | TEENSY 4.0 (HEADERS)                                   | DEV-16997                | SparkFun Electronics |        1 | 28.50 | 28.50 |
+|    3 | CBL USB2.0 A PLG-MCR B PLG 3.28'                       | 102-1492-BL-F0100        | CNC Tech             |        1 |  6.06 |  6.06 |
+|    4 | TERM BLOCK PLUG 4POS STR 3.5MM                         | 1840382                  | Phoenix Contact      |        3 |  6.27 | 18.81 |
+|    5 | TERM BLOCK PLUG 2POS STR 3.5MM                         | 1840366                  | Phoenix Contact      |        3 |  3.83 | 11.49 |
+|    6 | PICOBLADE 5 CIRCUIT 300MM                              | 0151340503               | Molex                |        1 |  5.18 |  5.18 |
+|------+--------------------------------------------------------+--------------------------+----------------------+----------+-------+-------|
+|    7 | Supplemental BOM Version: 1.0.0 |                          |                      |          | Total | 99.30 |
+#+TBLFM: $1=@#-1::$7=$5*$6;%0.2f::@>$7=vsum(@2..@-1);%0.2f
 #+LATEX: }
 #+END_TABLE
