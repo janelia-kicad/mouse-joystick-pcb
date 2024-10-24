@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/polidorop/Repositories/kicad/mouse-joystick-pcb/mouse-joystick-pcb/mouse-joystick-pcb.kicad_sch</source>
-    <date>Thu 24 Oct 2024 10:17:26 AM EDT</date>
+    <date>Thu 24 Oct 2024 11:01:58 AM EDT</date>
     <tool>Eeschema 7.0.11</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -385,30 +385,30 @@
       <tstamps>441d17f4-af2c-43eb-9f27-51c9da9c8621</tstamps>
     </comp>
     <comp ref="R301">
-      <value>2.32k</value>
+      <value>1.5k</value>
       <footprint>Janelia:R_0805_2012Metric</footprint>
       <fields>
-        <field name="LCSC">C3961061</field>
-        <field name="Manufacturer">TE Connectivity Passive Product</field>
-        <field name="Manufacturer Part Number">RA73F2A2K32BTD</field>
+        <field name="LCSC">C417005</field>
+        <field name="Manufacturer">PANASONIC</field>
+        <field name="Manufacturer Part Number">ERJP06J152V</field>
         <field name="Package">0805</field>
-        <field name="Synopsis">RA73F 2A 2K32 0.1% 5K RL</field>
+        <field name="Synopsis">RES SMD 1.5K OHM 5% 500mW</field>
         <field name="Vendor">Digi-Key</field>
-        <field name="Vendor Part Number">1712-RA73F2A2K32BTDCT-ND</field>
+        <field name="Vendor Part Number">P1.5KADCT-ND</field>
       </fields>
-      <libsource lib="Janelia" part="R_2.32k_1W_0805" description="2.32 kOhms ±0.1% 1W Chip Resistor 0805 (2012 Metric) Thin Film"/>
+      <libsource lib="Janelia" part="R_1.5k_500mW_0805" description="500mW Thick Film Resistors 600V ±5% ±200ppm/℃ 1.5kΩ 0805 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Synopsis" value="RES SMD 1.5K OHM 5% 500mW"/>
       <property name="Package" value="0805"/>
-      <property name="Manufacturer" value="TE Connectivity Passive Product"/>
-      <property name="Manufacturer Part Number" value="RA73F2A2K32BTD"/>
+      <property name="Manufacturer" value="PANASONIC"/>
+      <property name="Manufacturer Part Number" value="ERJP06J152V"/>
       <property name="Vendor" value="Digi-Key"/>
-      <property name="Vendor Part Number" value="1712-RA73F2A2K32BTDCT-ND"/>
-      <property name="Synopsis" value="RA73F 2A 2K32 0.1% 5K RL"/>
-      <property name="LCSC" value="C3961061"/>
+      <property name="Vendor Part Number" value="P1.5KADCT-ND"/>
+      <property name="LCSC" value="C417005"/>
       <property name="Sheetname" value="power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="2.32 kOhms ±0.1% 1W Chip Resistor 0805 (2012 Metric) Thin Film"/>
+      <property name="ki_description" value="500mW Thick Film Resistors 600V ±5% ±200ppm/℃ 1.5kΩ 0805 Chip Resistor - Surface Mount ROHS"/>
       <sheetpath names="/power/" tstamps="/c1dd8f61-494c-402f-8e59-08309c64fc3f/"/>
-      <tstamps>ae97a1a4-c0e0-45ac-b1d0-b6f77f7cf7a9</tstamps>
+      <tstamps>7ca44e8b-9e8f-4183-a683-34b65bb66827</tstamps>
     </comp>
     <comp ref="U301">
       <value>TPSM365R6V5RDNR</value>
@@ -3005,6 +3005,32 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Janelia" part="R_1.5k_500mW_0805">
+      <description>500mW Thick Film Resistors 600V ±5% ±200ppm/℃ 1.5kΩ 0805 Chip Resistor - Surface Mount ROHS</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">1.5k</field>
+        <field name="Footprint">Janelia:R_0805_2012Metric</field>
+        <field name="Synopsis">RES SMD 1.5K OHM 5% 500mW</field>
+        <field name="Package">0805</field>
+        <field name="Manufacturer">PANASONIC</field>
+        <field name="Manufacturer Part Number">ERJP06J152V</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">P1.5KADCT-ND</field>
+        <field name="LCSC">C417005</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Janelia" part="R_1.8k_0402">
       <description>100mW Thick Film Resistors ±5% ±200ppm/℃ 1.8kΩ 0402 Chip Resistor - Surface Mount ROHS</description>
       <footprints>
@@ -3050,32 +3076,6 @@
         <field name="Manufacturer">YAGEO</field>
         <field name="Manufacturer Part Number">RC0402FR-0710RL</field>
         <field name="LCSC">C138066</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Janelia" part="R_2.32k_1W_0805">
-      <description>2.32 kOhms ±0.1% 1W Chip Resistor 0805 (2012 Metric) Thin Film</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">2.32k</field>
-        <field name="Footprint">Janelia:R_0805_2012Metric</field>
-        <field name="Synopsis">RA73F 2A 2K32 0.1% 5K RL</field>
-        <field name="Package">0805</field>
-        <field name="Manufacturer">TE Connectivity Passive Product</field>
-        <field name="Manufacturer Part Number">RA73F2A2K32BTD</field>
-        <field name="Vendor">Digi-Key</field>
-        <field name="Vendor Part Number">1712-RA73F2A2K32BTDCT-ND</field>
-        <field name="LCSC">C3961061</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>

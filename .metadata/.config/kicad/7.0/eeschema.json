@@ -53,17 +53,17 @@
         "path": "bom_csv_grouped_extra.py"
       },
       {
-        "command": "",
+        "command": "/gnu/store/1w5v338qk5m8khcazwclprs3znqp6f7f-python-3.10.7/bin/python3 \"/gnu/store/08hq1qncp66nrxva8df4jwv3wwf4hhjx-kicad-7.0.11/share/kicad/plugins/bom_csv_grouped_by_value.py\" \"%I\" \"%O.csv\"",
         "name": "bom_csv_grouped_by_value",
         "path": "bom_csv_grouped_by_value.py"
       },
       {
-        "command": "",
+        "command": "/gnu/store/1w5v338qk5m8khcazwclprs3znqp6f7f-python-3.10.7/bin/python3 \"/gnu/store/08hq1qncp66nrxva8df4jwv3wwf4hhjx-kicad-7.0.11/share/kicad/plugins/bom_csv_grouped_by_value_with_fp.py\" \"%I\" \"%O.csv\"",
         "name": "bom_csv_grouped_by_value_with_fp",
         "path": "bom_csv_grouped_by_value_with_fp.py"
       }
     ],
-    "selected_plugin": ""
+    "selected_plugin": "bom_csv_grouped_extra"
   },
   "color_picker": {
     "default_tab": 0
@@ -129,7 +129,7 @@
   },
   "lib_tree": {
     "column_widths": {
-      "Description": 488,
+      "Description": 490,
       "Item": 489
     },
     "columns": [
@@ -176,8 +176,8 @@
   "plot": {
     "background_color": false,
     "color": true,
-    "color_theme": "user",
-    "format": 0,
+    "color_theme": "/home/polidorop/.local/share/kicad/7.0/3rdparty/colors/com_github_pointhi_kicad-color-schemes_solarized-light/solarized-light.json",
+    "format": 5,
     "frame_reference": true,
     "hpgl_origin": 0,
     "hpgl_paper_size": 0,
@@ -234,7 +234,7 @@
     "last_symbol_lib_dir": "",
     "max_undo_items": 0,
     "never_show_rescue_dialog": false,
-    "units": 1
+    "units": 0
   },
   "window": {
     "cursor": {
@@ -257,11 +257,11 @@
     },
     "maximized": true,
     "mru_path": "",
-    "perspective": "layout2|name=InfoBar;caption=;state=131454;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1204;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=390;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SchematicHierarchy;caption=Schematic Hierarchy;state=2099148;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=2172;floaty=45;floatw=200;floath=200|name=OptToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=396;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=762;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=390;besth=154;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(3,6,0)=38|dock_size(4,2,0)=34|dock_size(2,2,0)=34|dock_size(5,0,0)=363|dock_size(4,3,0)=202|",
+    "perspective": "layout2|name=InfoBar;caption=;state=131454;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1204;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=390;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SchematicHierarchy;caption=Schematic Hierarchy;state=2099148;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=252;floaty=70;floatw=200;floath=200|name=OptToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=396;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=762;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=390;besth=154;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(3,6,0)=38|dock_size(4,2,0)=34|dock_size(2,2,0)=34|dock_size(5,0,0)=357|dock_size(4,3,0)=202|",
     "pos_x": 0,
     "pos_y": 25,
-    "size_x": 1210,
-    "size_y": 650,
+    "size_x": 1200,
+    "size_y": 640,
     "zoom_factors": [
       0.05,
       0.07,

@@ -1,16 +1,16 @@
-- [Repository Info](#org14d0c53)
-- [Images](#org9544d27)
-- [Schematic](#org6749648)
-- [PCB](#org534e4a7)
-- [Bill of Materials](#org1c01f95)
-- [Notes](#org21dc098)
-- [Development](#org81ab678)
+- [Repository Info](#org0ea214a)
+- [Images](#orgca524d1)
+- [Schematic](#org850561a)
+- [PCB](#org74a1e82)
+- [Bill of Materials](#org4ff06ea)
+- [Notes](#org5cec75d)
+- [Development](#org5a12576)
 
     <!-- This file is generated automatically from metadata -->
     <!-- File edits may be overwritten! -->
 
 
-<a id="org14d0c53"></a>
+<a id="org0ea214a"></a>
 
 # Repository Info
 
@@ -38,7 +38,7 @@
 ![img](./documentation/pcb/pcb.png)
 
 
-<a id="org9544d27"></a>
+<a id="orgca524d1"></a>
 
 # Images
 
@@ -55,7 +55,7 @@
 <img src="./documentation/pcb/right.png" width="1920">
 
 
-<a id="org6749648"></a>
+<a id="org850561a"></a>
 
 # Schematic
 
@@ -80,7 +80,7 @@
 <img src="./documentation/schematic/mouse-joystick-pcb-torque-sensor.svg" width="1920">
 
 
-<a id="org534e4a7"></a>
+<a id="org74a1e82"></a>
 
 # PCB
 
@@ -95,7 +95,7 @@
 <img src="./documentation/pcb/mouse-joystick-pcb-B_Fab.svg" width="1920">
 
 
-<a id="org1c01f95"></a>
+<a id="org4ff06ea"></a>
 
 # Bill of Materials
 
@@ -121,7 +121,7 @@
 | 15   | TERM BLOCK HDR 2POS 90DEG 3.5MM           | 1844210                  | Phoenix Contact                      | 3        | J501 J701 J801                                                                                      | Plugin P=3.5mm    |
 | 16   | TERM BLOCK HDR 4POS 90DEG 3.5MM           | 1844236                  | Phoenix Contact                      | 3        | J502 J702 J901                                                                                      | Push-Pull P=3.5mm |
 | 17   | CONN HEADER SMD R/A 5POS 1.25MM           | 0532610571               | MOLEX                                | 1        | J503                                                                                                | SMD               |
-| 18   | RA73F 2A 2K32 0.1% 5K RL                  | RA73F2A2K32BTD           | TE Connectivity Passive Product      | 1        | R301                                                                                                | 0805              |
+| 18   | RES SMD 1.5K OHM 5% 500mW                 | ERJP06J152V              | PANASONIC                            | 1        | R301                                                                                                | 0805              |
 | 19   | RES SMD 1.8K OHM 5% 100mW                 | ERJ2GEJ182X              | PANASONIC                            | 4        | R401 R402 R505 R704                                                                                 | 0402              |
 | 20   | 0.36 250mW Current Sense Resistor         | RL1206FR-070R36L         | YAGEO                                | 2        | R501 R502                                                                                           | 1206              |
 | 21   | RES SMD 10 OHM 1% 62.5mW                  | RC0402FR-0710RL          | YAGEO                                | 2        | R503 R703                                                                                           | 0402              |
@@ -153,7 +153,7 @@
 | 7    | Supplemental BOM Version: 1.0.0  |                          |                      |          | Total | 99.30 |
 
 
-<a id="org21dc098"></a>
+<a id="org5cec75d"></a>
 
 # Notes
 
@@ -203,7 +203,7 @@ MiSUMi D2F-01FL
 -   Normally open or normally closed
 
 
-<a id="org81ab678"></a>
+<a id="org5a12576"></a>
 
 # Development
 
