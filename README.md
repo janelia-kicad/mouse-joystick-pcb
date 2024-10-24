@@ -1,16 +1,16 @@
-- [Repository Info](#org0ea214a)
-- [Images](#orgca524d1)
-- [Schematic](#org850561a)
-- [PCB](#org74a1e82)
-- [Bill of Materials](#org4ff06ea)
-- [Notes](#org5cec75d)
-- [Development](#org5a12576)
+- [Repository Info](#org848bbb8)
+- [Images](#org07a21c3)
+- [Schematic](#org23b0c57)
+- [PCB](#orged9e501)
+- [Bill of Materials](#org9387ca8)
+- [Notes](#orgdb3690e)
+- [Development](#org3c101aa)
 
     <!-- This file is generated automatically from metadata -->
     <!-- File edits may be overwritten! -->
 
 
-<a id="org0ea214a"></a>
+<a id="org848bbb8"></a>
 
 # Repository Info
 
@@ -38,7 +38,7 @@
 ![img](./documentation/pcb/pcb.png)
 
 
-<a id="orgca524d1"></a>
+<a id="org07a21c3"></a>
 
 # Images
 
@@ -55,7 +55,7 @@
 <img src="./documentation/pcb/right.png" width="1920">
 
 
-<a id="org850561a"></a>
+<a id="org23b0c57"></a>
 
 # Schematic
 
@@ -80,7 +80,7 @@
 <img src="./documentation/schematic/mouse-joystick-pcb-torque-sensor.svg" width="1920">
 
 
-<a id="org74a1e82"></a>
+<a id="orged9e501"></a>
 
 # PCB
 
@@ -95,7 +95,7 @@
 <img src="./documentation/pcb/mouse-joystick-pcb-B_Fab.svg" width="1920">
 
 
-<a id="org4ff06ea"></a>
+<a id="org9387ca8"></a>
 
 # Bill of Materials
 
@@ -153,7 +153,7 @@
 | 7    | Supplemental BOM Version: 1.0.0  |                          |                      |          | Total | 99.30 |
 
 
-<a id="org5cec75d"></a>
+<a id="orgdb3690e"></a>
 
 # Notes
 
@@ -203,7 +203,7 @@ MiSUMi D2F-01FL
 -   Normally open or normally closed
 
 
-<a id="org5a12576"></a>
+<a id="org3c101aa"></a>
 
 # Development
 

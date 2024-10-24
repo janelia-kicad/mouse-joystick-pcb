@@ -54,7 +54,7 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "J702","Conn_01x04_P3.5mm_TBH_Horizontal_Screw","PhoenixContact_MC_1,5_4-G-3.5_1x04_P3.50mm_Horizontal_Screw",102.400000,-153.600000,0.000000,top
 "J801","Conn_01x02_P3.5mm_TBH_Horizontal_Screw","PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal_Screw",124.400000,-103.600000,90.000000,top
 "J901","Conn_01x04_P3.5mm_TBH_Horizontal_Screw","PhoenixContact_MC_1,5_4-G-3.5_1x04_P3.50mm_Horizontal_Screw",124.400000,-123.600000,90.000000,top
-"R301","2.32k","R_0805_2012Metric",102.900000,-46.100000,-90.000000,top
+"R301","1.5k","R_0805_2012Metric",102.900000,-46.100000,-90.000000,top
 "R401","1.8k","R_0402_1005Metric",102.650000,-55.600000,-90.000000,top
 "R402","1.8k","R_0402_1005Metric",103.900000,-55.600000,-90.000000,top
 "R501","0.36","R_1206_3216Metric",107.400000,-68.100000,180.000000,top
