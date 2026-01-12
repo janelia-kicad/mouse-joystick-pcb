@@ -1,17 +1,11 @@
 ;; This file is generated automatically from metadata
 ;; File edits may be overwritten!
 (list (channel
-        (name 'guix-janelia)
-        (url "https://github.com/guix-janelia/guix-janelia.git")
-        (branch "main")
-        (commit
-          "6d2cb9cdd679f90c1a4fb02af02d2d1cfe2fcca6"))
-      (channel
         (name 'guix)
-        (url "https://git.savannah.gnu.org/git/guix.git")
+        (url "https://git.guix.gnu.org/guix.git")
         (branch "master")
         (commit
-          "3b5533f9bdac4a929c3d93e628ee2ae279013685")
+          "c12e28dfc0e2a8013b6ba0b89cb23cfa0bb9c5f2")
         (introduction
           (make-channel-introduction
             "9edb3f66fd807b096b48283debdcddccfea34bad"

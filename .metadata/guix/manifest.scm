@@ -17,7 +17,6 @@
    "inkscape"
    "python"
    "python-ipython"
-   "python-kicad-bom"
    "dosbox"
    "freecad"
    "font-orbitron"
