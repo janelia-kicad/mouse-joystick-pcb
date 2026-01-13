@@ -60,6 +60,7 @@
     "use_theme": false
   },
   "search_pane": {
+    "search_hidden_fields": true,
     "selection_zoom": 1
   },
   "system": {
@@ -72,7 +73,7 @@
     "last_imperial_units": 5,
     "last_metric_units": 1,
     "last_received_update": "",
-    "last_update_check_time": "2025-07-17T13:45:54",
+    "last_update_check_time": "2026-01-13T13:35:22",
     "max_undo_items": 0,
     "open_projects": [
       "/home/peter/Repositories/kicad/mouse-joystick-pcb/mouse-joystick-pcb/mouse-joystick-pcb.kicad_pro"
@@ -241,6 +242,25 @@
     "pos_y": 402,
     "size_x": 989,
     "size_y": 614,
-    "zoom_factors": []
+    "zoom_factors": [
+      0.13,
+      0.22,
+      0.35,
+      0.6,
+      1.0,
+      1.5,
+      2.2,
+      3.5,
+      5.0,
+      8.0,
+      13.0,
+      20.0,
+      35.0,
+      50.0,
+      80.0,
+      130.0,
+      220.0,
+      300.0
+    ]
   }
 }
