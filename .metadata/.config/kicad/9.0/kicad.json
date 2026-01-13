@@ -65,7 +65,7 @@
   "system": {
     "check_for_kicad_updates": true,
     "file_history": [
-      "/home/peter/Repositories/kicad/cluster-pcb/cluster-pcb/cluster-pcb.kicad_pro"
+      "/home/peter/Repositories/kicad/mouse-joystick-pcb/mouse-joystick-pcb/mouse-joystick-pcb.kicad_pro"
     ],
     "first_run_shown": false,
     "last_design_block_lib_dir": "",
@@ -75,7 +75,7 @@
     "last_update_check_time": "2025-07-17T13:45:54",
     "max_undo_items": 0,
     "open_projects": [
-      "/home/peter/Repositories/kicad/cluster-pcb/cluster-pcb/cluster-pcb.kicad_pro"
+      "/home/peter/Repositories/kicad/mouse-joystick-pcb/mouse-joystick-pcb/mouse-joystick-pcb.kicad_pro"
     ],
     "show_import_issues": true,
     "units": 1
@@ -235,7 +235,7 @@
       "user_grid_y": ""
     },
     "maximized": false,
-    "mru_path": "/home/peter/Repositories/kicad/cluster-pcb/cluster-pcb/",
+    "mru_path": "/home/peter/Repositories/kicad/mouse-joystick-pcb/mouse-joystick-pcb/",
     "perspective": "layout2|name=MainToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=227;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProjectTree;caption=Project Files;state=1532;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=250;besth=-1;minw=250;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Editors;caption=Editors;state=508;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=700;besth=590;minw=700;minh=590;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,2,0)=34|dock_size(4,1,0)=250|dock_size(5,0,0)=700|",
     "pos_x": 785,
     "pos_y": 402,
