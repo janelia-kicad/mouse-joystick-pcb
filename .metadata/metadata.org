@@ -599,7 +599,7 @@ exit
         (url "https://git.guix.gnu.org/guix.git")
         (branch "master")
         (commit
-          "b214f55f60e32fa48827c488d5269ce188d1fb5f")
+          "89e8c55f2b9e0d4f679561b96016b552a74e9534")
         (introduction
           (make-channel-introduction
             "9edb3f66fd807b096b48283debdcddccfea34bad"
