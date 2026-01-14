@@ -1,590 +1,1788 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 28089ed1-da4c-4f3f-aabb-b63ffdf637cc)
-
-  (paper "A4")
-
-  (title_block
-    (title "mouse-joystick-pcb")
-    (date "2024-10-24")
-    (rev "1.0")
-    (company "Peter Polidoro")
-  )
-
-  (lib_symbols
-    (symbol "Janelia:R_1.8k_0402" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.016 1.016)))
-      )
-      (property "Value" "1.8k" (at 0 0 90) (do_not_autoplace)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Footprint" "Janelia:R_0402_1005Metric" (at -1.778 0 90)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Datasheet" "" (at 2.032 0 90)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Vendor" "JLCPCB" (at 4.572 2.54 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "C409855" (at 7.112 5.08 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "RES SMD 1.8K OHM 5% 100mW" (at 9.652 7.62 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Package" "0402" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer" "PANASONIC" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "ERJ2GEJ182X" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C409855" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "100mW Thick Film Resistors ±5% ±200ppm/℃ 1.8kΩ 0402 Chip Resistor - Surface Mount ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R? SM0603 SM0805 R?-* SM1206" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_1.8k_0402_0_1"
-        (rectangle (start -1.016 3.81) (end 1.016 -3.81)
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1.8k_0402_1_1"
-        (pin passive line (at 0 6.35 270) (length 2.54)
-          (name "~" (effects (font (size 1.524 1.524))))
-          (number "1" (effects (font (size 1.524 1.524))))
-        )
-        (pin passive line (at 0 -6.35 90) (length 2.54)
-          (name "~" (effects (font (size 1.524 1.524))))
-          (number "2" (effects (font (size 1.524 1.524))))
-        )
-      )
-    )
-    (symbol "Janelia:TEENSY_4.0_HEADERS" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "A" (at 0 19.05 0) (do_not_autoplace)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "TEENSY_4.0_HEADERS" (at 0 -19.05 0) (do_not_autoplace)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Footprint" "Janelia:TEENSY_4.0_HEADERS" (at 0 26.67 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Datasheet" "" (at 1.27 69.85 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Vendor" "Digi-Key" (at 0 29.21 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "S7047-ND" (at 0 31.75 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "CONN HDR 14POS 0.1 GOLD PCB" (at 0 34.29 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Manufacturer" "Sullins Connector Solutions" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "PPPC141LFBN-RC" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Enable" "0" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TEENSY_4.0_HEADERS_0_1"
-        (rectangle (start -26.67 17.78) (end 26.67 -17.78)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "TEENSY_4.0_HEADERS_1_1"
-        (text "TEENSY 4.0" (at -1.27 16.51 0)
-          (effects (font (size 1.524 1.524)))
-        )
-        (pin bidirectional line (at -31.75 13.97 0) (length 5.08)
-          (name "D0/RX1/CRX2/PWM" (effects (font (size 1.27 1.27))))
-          (number "0" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 11.43 0) (length 5.08)
-          (name "D1/TX1/CTX2/PWM" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -11.43 0) (length 5.08)
-          (name "D10/CS/MQSR/PWM" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -13.97 0) (length 5.08)
-          (name "D11/COPI/PWM" (effects (font (size 1.27 1.27))))
-          (number "11" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -16.51 0) (length 5.08)
-          (name "D12/CIPO/MQSL/PWM" (effects (font (size 1.27 1.27))))
-          (number "12" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 31.75 -16.51 180) (length 5.08)
-          (name "D13/LED/SCK/PWM" (effects (font (size 1.27 1.27))))
-          (number "13" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 -13.97 180) (length 5.08)
-          (name "D14/A0/TX3/SOUT/PWM" (effects (font (size 1.27 1.27))))
-          (number "14" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 -11.43 180) (length 5.08)
-          (name "D15/A1/RX3/SIN/PWM" (effects (font (size 1.27 1.27))))
-          (number "15" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 -8.89 180) (length 5.08)
-          (name "D16/A2/RX4/SCL1" (effects (font (size 1.27 1.27))))
-          (number "16" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 -6.35 180) (length 5.08)
-          (name "D17/A3/TX4/SDA1" (effects (font (size 1.27 1.27))))
-          (number "17" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 -3.81 180) (length 5.08)
-          (name "D18/A4/SDA0/PWM" (effects (font (size 1.27 1.27))))
-          (number "18" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 -1.27 180) (length 5.08)
-          (name "D19/A5/SCL0/PWM" (effects (font (size 1.27 1.27))))
-          (number "19" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 8.89 0) (length 5.08)
-          (name "D2/OUT2/PWM" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 1.27 180) (length 5.08)
-          (name "D20/A6/TX5/LRCLK1" (effects (font (size 1.27 1.27))))
-          (number "20" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 3.81 180) (length 5.08)
-          (name "D21/A7/RX5/BCLK1" (effects (font (size 1.27 1.27))))
-          (number "21" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 6.35 180) (length 5.08)
-          (name "D22/A8/CTX1/PWM" (effects (font (size 1.27 1.27))))
-          (number "22" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 8.89 180) (length 5.08)
-          (name "D23/A9/CRX1/MCLK1/PWM" (effects (font (size 1.27 1.27))))
-          (number "23" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 6.35 0) (length 5.08)
-          (name "D3/LRCLK2/PWM" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 31.75 11.43 180) (length 5.08)
-          (name "3.3v_(250_mA_max)" (effects (font (size 1.27 1.27))))
-          (number "3V3" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 3.81 0) (length 5.08)
-          (name "D4/BCLK2/PWM" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 1.27 0) (length 5.08)
-          (name "D5/IN2/PWM" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -1.27 0) (length 5.08)
-          (name "D6/OUT1D/PWM" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -3.81 0) (length 5.08)
-          (name "D7/RX2/OUT1A/PWM" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -6.35 0) (length 5.08)
-          (name "D8/TX2/IN1/PWM" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -31.75 -8.89 0) (length 5.08)
-          (name "D9/OUT1C/PWM" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -31.75 16.51 0) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "GND" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 31.75 16.51 180) (length 5.08)
-          (name "VIN/VUSB" (effects (font (size 1.27 1.27))))
-          (number "V" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (no_connect (at 162.56 92.71) (uuid 0aaf29ab-e3cf-4853-b8af-95d3a23b6078))
-  (no_connect (at 162.56 90.17) (uuid 28df19fa-532d-4257-a7ac-863bd37cb043))
-  (no_connect (at 99.06 85.09) (uuid 5d3485c8-a685-46b6-aeb7-0c4d7a9f4432))
-  (no_connect (at 99.06 92.71) (uuid 629d6512-dcb1-4534-b9bd-34f8a0247616))
-  (no_connect (at 162.56 77.47) (uuid 7fe8b76e-e5c5-4f88-a41b-7473ffca8eeb))
-  (no_connect (at 162.56 102.87) (uuid 84623e8a-8e3b-49e8-8d46-b5ba743cbf80))
-  (no_connect (at 99.06 95.25) (uuid 8fccfb32-741c-4306-ae1a-39abbea4c3bb))
-  (no_connect (at 99.06 82.55) (uuid 9628fae7-6d92-4274-90e6-e692fc7c1e3d))
-  (no_connect (at 162.56 100.33) (uuid 9c1c2bec-d385-4e37-ab19-128ae0c611da))
-  (no_connect (at 99.06 80.01) (uuid a7b28c3f-e228-4ecd-8b09-6115975a2a80))
-  (no_connect (at 99.06 87.63) (uuid b44619ed-5b31-4d6a-819e-91f5c3da8b24))
-  (no_connect (at 99.06 90.17) (uuid da4dd3d1-a938-4e5c-a2e3-21165e7932eb))
-  (no_connect (at 162.56 85.09) (uuid dfce05db-3af1-4277-bb26-f7cc613f5179))
-  (no_connect (at 162.56 87.63) (uuid eefc6ff7-f36e-4cb0-a174-d7f86957066f))
-
-  (wire (pts (xy 162.56 110.49) (xy 165.1 110.49))
-    (stroke (width 0) (type default))
-    (uuid 049c1833-6812-40d6-beab-2f4788d0a882)
-  )
-  (wire (pts (xy 50.8 52.07) (xy 53.34 52.07))
-    (stroke (width 0) (type default))
-    (uuid 17c1f377-8bc9-409b-a964-cf77b7ae1204)
-  )
-  (wire (pts (xy 213.36 87.63) (xy 213.36 90.17))
-    (stroke (width 0) (type default))
-    (uuid 2defd2c0-259e-4f78-a801-eb7bcb58137c)
-  )
-  (wire (pts (xy 50.8 57.15) (xy 53.34 57.15))
-    (stroke (width 0) (type default))
-    (uuid 3e55b120-b82d-4c3a-ae26-6164ba8569c4)
-  )
-  (wire (pts (xy 99.06 102.87) (xy 96.52 102.87))
-    (stroke (width 0) (type default))
-    (uuid 42ba0442-fb2f-4be0-aa73-f0572a4140ed)
-  )
-  (wire (pts (xy 162.56 82.55) (xy 165.1 82.55))
-    (stroke (width 0) (type default))
-    (uuid 4390bd4b-be01-493d-a45f-afb67e04d079)
-  )
-  (wire (pts (xy 213.36 74.93) (xy 213.36 72.39))
-    (stroke (width 0) (type default))
-    (uuid 5185ac7e-859f-4d3e-a3f9-e132ee489413)
-  )
-  (wire (pts (xy 99.06 107.95) (xy 96.52 107.95))
-    (stroke (width 0) (type default))
-    (uuid 592c4b91-9091-40ca-8b6e-6e7db65d4880)
-  )
-  (wire (pts (xy 99.06 110.49) (xy 96.52 110.49))
-    (stroke (width 0) (type default))
-    (uuid 5ebaad83-0bf6-49ab-8919-a9ace68c182d)
-  )
-  (wire (pts (xy 50.8 49.53) (xy 53.34 49.53))
-    (stroke (width 0) (type default))
-    (uuid 75fd2ba2-1ba1-462d-8259-24b2878b020b)
-  )
-  (wire (pts (xy 222.25 74.93) (xy 222.25 72.39))
-    (stroke (width 0) (type default))
-    (uuid 781133df-d046-414e-89cc-31396bd43551)
-  )
-  (wire (pts (xy 162.56 107.95) (xy 165.1 107.95))
-    (stroke (width 0) (type default))
-    (uuid 8c1496fd-ae38-445c-a15c-52891739ca0e)
-  )
-  (wire (pts (xy 162.56 97.79) (xy 165.1 97.79))
-    (stroke (width 0) (type default))
-    (uuid 9140bc69-83c4-4991-89ee-255c111a2892)
-  )
-  (wire (pts (xy 50.8 54.61) (xy 53.34 54.61))
-    (stroke (width 0) (type default))
-    (uuid 96442ec7-f3b6-41fb-afcf-989c4cc22134)
-  )
-  (wire (pts (xy 162.56 105.41) (xy 165.1 105.41))
-    (stroke (width 0) (type default))
-    (uuid adb1626d-78b5-4991-89f3-1bf7778fd7da)
-  )
-  (wire (pts (xy 99.06 97.79) (xy 96.52 97.79))
-    (stroke (width 0) (type default))
-    (uuid b2447091-f684-4a0d-9062-acc82fa117e7)
-  )
-  (wire (pts (xy 222.25 87.63) (xy 222.25 90.17))
-    (stroke (width 0) (type default))
-    (uuid c2ac3349-5ead-42c8-b972-36a16e12cf2c)
-  )
-  (wire (pts (xy 96.52 105.41) (xy 99.06 105.41))
-    (stroke (width 0) (type default))
-    (uuid c9e2d9c8-26bf-4f65-9703-cfb5e0b11fd9)
-  )
-  (wire (pts (xy 99.06 77.47) (xy 96.52 77.47))
-    (stroke (width 0) (type default))
-    (uuid ebe66722-87dc-4eb9-827a-f9bebd86fd7d)
-  )
-  (wire (pts (xy 162.56 95.25) (xy 165.1 95.25))
-    (stroke (width 0) (type default))
-    (uuid f204984b-f63c-47dc-b75b-874adb0bb050)
-  )
-  (wire (pts (xy 99.06 100.33) (xy 96.52 100.33))
-    (stroke (width 0) (type default))
-    (uuid f3797c91-461e-4a79-96de-7609c761d9bb)
-  )
-
-  (label "+3.3V" (at 165.1 82.55 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 01cbde11-2ca0-4710-89c5-cd260f7db77b)
-  )
-  (label "SCL" (at 53.34 57.15 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 379eb0e7-2c05-4ffd-bfb8-4a312daf3f29)
-  )
-  (label "SDA" (at 53.34 54.61 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 494bea23-8c97-400c-b12c-9bbc7f087e31)
-  )
-  (label "GND" (at 53.34 52.07 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4ce80f40-b6e5-465f-9719-2a40f84fbdc6)
-  )
-  (label "+3.3V" (at 222.25 72.39 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 75b12cc4-f656-4fac-8857-4335a1f83312)
-  )
-  (label "GND" (at 96.52 77.47 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9126d694-bf93-4a59-b50f-111635dd2f25)
-  )
-  (label "SCL" (at 213.36 90.17 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9ea3556f-c37d-4e1a-9090-769f46c5532b)
-  )
-  (label "SDA" (at 165.1 97.79 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid cb4b9868-680c-45dd-9b3b-065b07ea5b7c)
-  )
-  (label "+3.3V" (at 53.34 49.53 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ce4887f1-0cf8-485c-9565-7fed95495577)
-  )
-  (label "+3.3V" (at 213.36 72.39 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d6ef55cd-6602-4eb5-9ae9-d0232e62ba3a)
-  )
-  (label "SDA" (at 222.25 90.17 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid e35534d2-33da-425c-86ff-a765ab54e9bd)
-  )
-  (label "SCL" (at 165.1 95.25 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ed04ec97-0f1e-486b-8177-dccd2921d94a)
-  )
-
-  (hierarchical_label "~{JOYSTICK_MOTOR_CS}" (shape output) (at 165.1 107.95 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 52d8d334-8e4e-401e-9281-f1d7acbd5dc8)
-  )
-  (hierarchical_label "BRAKE_PWM" (shape output) (at 96.52 105.41 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 60904866-d656-44a3-ad6d-2b6f360ea57a)
-  )
-  (hierarchical_label "BASE_MOTOR_DIAG0" (shape input) (at 96.52 97.79 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 72fd0100-dcfd-4fdb-a00c-9575451f4f9e)
-  )
-  (hierarchical_label "SCL" (shape output) (at 50.8 57.15 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 883eb81f-6714-4e83-a230-58b935f4fe11)
-  )
-  (hierarchical_label "GND" (shape passive) (at 50.8 52.07 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 89f90444-e124-4e46-a8df-25c19fc07128)
-  )
-  (hierarchical_label "+3.3V" (shape passive) (at 50.8 49.53 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 95286a26-57de-4ee3-a168-06c0e5fef07f)
-  )
-  (hierarchical_label "CIPO" (shape input) (at 96.52 110.49 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 9ce89542-1901-4a2d-acec-71908556ac19)
-  )
-  (hierarchical_label "SCK" (shape output) (at 165.1 110.49 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid adbd55a7-5893-4b23-bb4a-2586fc444259)
-  )
-  (hierarchical_label "SDA" (shape bidirectional) (at 50.8 54.61 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b2c6852d-a0e4-4cf7-a3b0-d26b04a29dc2)
-  )
-  (hierarchical_label "AUDIO" (shape output) (at 96.52 102.87 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid d57f1b03-ef4e-4a0b-9bed-18c858f8a976)
-  )
-  (hierarchical_label "JOYSTICK_MOTOR_DIAG0" (shape input) (at 165.1 105.41 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid de69b71c-6d90-405b-883d-0290adc55793)
-  )
-  (hierarchical_label "~{BASE_MOTOR_CS}" (shape output) (at 96.52 100.33 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e5157f85-4455-4184-8a17-cf69981e7c71)
-  )
-  (hierarchical_label "COPI" (shape output) (at 96.52 107.95 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid ee5ac091-b1ba-430a-b8d7-a2426c57897b)
-  )
-
-  (symbol (lib_id "Janelia:R_1.8k_0402") (at 222.25 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0350f20a-2cd9-47ce-8ce8-a5bea3c3176c)
-    (property "Reference" "R402" (at 223.52 81.28 0)
-      (effects (font (size 1.016 1.016)) (justify left))
-    )
-    (property "Value" "1.8k" (at 222.25 81.28 90) (do_not_autoplace)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "Janelia:R_0402_1005Metric" (at 220.472 81.28 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 224.282 81.28 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Vendor" "JLCPCB" (at 226.822 78.74 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "C409855" (at 229.362 76.2 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "RES SMD 1.8K OHM 5% 100mW" (at 231.902 73.66 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Package" "0402" (at 222.25 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "PANASONIC" (at 222.25 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "ERJ2GEJ182X" (at 222.25 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C409855" (at 222.25 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 5e0275e2-ea88-4acd-b433-46f47fcdcbcd))
-    (pin "1" (uuid 6fc37d8f-c105-47d9-9470-939ac2a7a521))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/90ad6836-1738-4b32-a341-0a0b169f4662"
-          (reference "R402") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:R_1.8k_0402") (at 213.36 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3171934d-9186-408b-9fc1-3f1c0af3680b)
-    (property "Reference" "R401" (at 214.63 81.28 0)
-      (effects (font (size 1.016 1.016)) (justify left))
-    )
-    (property "Value" "1.8k" (at 213.36 81.28 90) (do_not_autoplace)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "Janelia:R_0402_1005Metric" (at 211.582 81.28 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 215.392 81.28 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Vendor" "JLCPCB" (at 217.932 78.74 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "C409855" (at 220.472 76.2 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "RES SMD 1.8K OHM 5% 100mW" (at 223.012 73.66 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Package" "0402" (at 213.36 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "PANASONIC" (at 213.36 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "ERJ2GEJ182X" (at 213.36 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C409855" (at 213.36 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 808c4f1f-c0b4-448e-b616-d15eb78e4e12))
-    (pin "1" (uuid d923e54d-882f-44ad-ad4a-2c6a675a3427))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/90ad6836-1738-4b32-a341-0a0b169f4662"
-          (reference "R401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:TEENSY_4.0_HEADERS") (at 130.81 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b045351e-9cc0-4f0f-8399-064841114fdf)
-    (property "Reference" "A401" (at 130.81 74.93 0) (do_not_autoplace)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "TEENSY_4.0_HEADERS" (at 130.81 113.03 0) (do_not_autoplace)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Footprint" "Janelia:TEENSY_4.0_HEADERS" (at 130.81 67.31 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 24.13 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Vendor" "Digi-Key" (at 130.81 64.77 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "S7047-ND" (at 130.81 62.23 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "CONN HDR 14POS 0.1 GOLD PCB" (at 130.81 59.69 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "Sullins Connector Solutions" (at 130.81 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "PPPC141LFBN-RC" (at 130.81 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 130.81 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 90750c28-0ad0-4ffc-8f07-ffc887598c2d))
-    (pin "5" (uuid 79cb0e4a-7d5d-4f7b-9100-e5b044b909ab))
-    (pin "21" (uuid 25b60168-fe0b-44d3-b781-c0aa64cee92c))
-    (pin "V" (uuid 5ccf1324-6021-4b6d-ac74-1c45648490d7))
-    (pin "7" (uuid 07c181f8-6e60-476c-9fb2-0eaa5a45d17e))
-    (pin "9" (uuid f69ddae8-b56e-4d39-99ea-1c559f961f18))
-    (pin "17" (uuid c461debc-cac3-40dd-8c66-150213d389f0))
-    (pin "6" (uuid 3c267955-6d34-47c9-9ec5-aa35cd1bf5c8))
-    (pin "3" (uuid 8182ec73-8450-4f6e-a82d-9137b4560648))
-    (pin "0" (uuid 71db777f-94a3-40c8-96fe-88b1156842b1))
-    (pin "1" (uuid 394bcc9b-0b36-4fe3-bb14-7c718ca3fd82))
-    (pin "10" (uuid 235575ab-c7e0-4d7c-be33-713eac9bdf32))
-    (pin "8" (uuid fdba4d69-7560-495d-b1e7-67355024016e))
-    (pin "18" (uuid c68e339e-39bf-4664-ba00-3bbae8c8ada4))
-    (pin "12" (uuid edd10c8a-2951-46f3-80ef-dd66160c1758))
-    (pin "11" (uuid 32c4fa3c-4983-465a-9a1b-674b562a73bf))
-    (pin "13" (uuid 048424e9-bc72-42db-baca-747d3e91cc3f))
-    (pin "3V3" (uuid 1ceffae1-6221-4e46-a9d1-7b538e35e0b6))
-    (pin "GND" (uuid b5c7a44d-71c2-4926-a9a0-f5d5e9b87e8c))
-    (pin "4" (uuid 71eff276-56bc-4de6-b1ae-ea8ef0bf8591))
-    (pin "19" (uuid e6d3727b-5996-4c75-8f15-d48324f810f7))
-    (pin "22" (uuid 903037e8-9f3c-4e66-99a7-eda5e9f5181f))
-    (pin "23" (uuid 99581003-a324-49c0-91b4-3d0cab4cee50))
-    (pin "20" (uuid 99a3dd1b-2a49-470c-b0f6-06e5b1c2bb73))
-    (pin "14" (uuid 48ee26d8-609e-4749-82c8-176d28d239ab))
-    (pin "15" (uuid 95038dd0-5290-448c-ae01-34775cb6bb9f))
-    (pin "16" (uuid 08f60184-0f9e-4828-b1c0-a0caefe23422))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/90ad6836-1738-4b32-a341-0a0b169f4662"
-          (reference "A401") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "28089ed1-da4c-4f3f-aabb-b63ffdf637cc")
+	(paper "A4")
+	(title_block
+		(title "mouse-joystick-pcb")
+		(date "2024-10-24")
+		(rev "1.0")
+		(company "Peter Polidoro")
+	)
+	(lib_symbols
+		(symbol "Janelia:R_1.8k_0402"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "1.8k"
+				(at 0 0 90)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:R_0402_1005Metric"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Description" "100mW Thick Film Resistors ±5% ±200ppm/℃ 1.8kΩ 0402 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "JLCPCB"
+				(at 4.572 2.54 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "C409855"
+				(at 7.112 5.08 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "RES SMD 1.8K OHM 5% 100mW"
+				(at 9.652 7.62 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "PANASONIC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "ERJ2GEJ182X"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C409855"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R? SM0603 SM0805 R?-* SM1206"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_1.8k_0402_0_1"
+				(rectangle
+					(start -1.016 3.81)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1.8k_0402_1_1"
+				(pin passive line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:TEENSY_4.0_HEADERS"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "A"
+				(at 0 19.05 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "TEENSY_4.0_HEADERS"
+				(at 0 -19.05 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Janelia:TEENSY_4.0_HEADERS"
+				(at 0 26.67 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 1.27 69.85 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 0 29.21 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "S7047-ND"
+				(at 0 31.75 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "CONN HDR 14POS 0.1 GOLD PCB"
+				(at 0 34.29 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Sullins Connector Solutions"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "PPPC141LFBN-RC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TEENSY_4.0_HEADERS_0_1"
+				(rectangle
+					(start -26.67 17.78)
+					(end 26.67 -17.78)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TEENSY_4.0_HEADERS_1_1"
+				(text "TEENSY 4.0"
+					(at -1.27 16.51 0)
+					(effects
+						(font
+							(size 1.524 1.524)
+						)
+					)
+				)
+				(pin passive line
+					(at -31.75 16.51 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 13.97 0)
+					(length 5.08)
+					(name "D0/RX1/CRX2/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 11.43 0)
+					(length 5.08)
+					(name "D1/TX1/CTX2/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 8.89 0)
+					(length 5.08)
+					(name "D2/OUT2/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 6.35 0)
+					(length 5.08)
+					(name "D3/LRCLK2/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 3.81 0)
+					(length 5.08)
+					(name "D4/BCLK2/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 1.27 0)
+					(length 5.08)
+					(name "D5/IN2/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -1.27 0)
+					(length 5.08)
+					(name "D6/OUT1D/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -3.81 0)
+					(length 5.08)
+					(name "D7/RX2/OUT1A/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -6.35 0)
+					(length 5.08)
+					(name "D8/TX2/IN1/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -8.89 0)
+					(length 5.08)
+					(name "D9/OUT1C/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -11.43 0)
+					(length 5.08)
+					(name "D10/CS/MQSR/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -13.97 0)
+					(length 5.08)
+					(name "D11/COPI/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -31.75 -16.51 0)
+					(length 5.08)
+					(name "D12/CIPO/MQSL/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 16.51 180)
+					(length 5.08)
+					(name "VIN/VUSB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 31.75 11.43 180)
+					(length 5.08)
+					(name "3.3v_(250_mA_max)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 8.89 180)
+					(length 5.08)
+					(name "D23/A9/CRX1/MCLK1/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 6.35 180)
+					(length 5.08)
+					(name "D22/A8/CTX1/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 3.81 180)
+					(length 5.08)
+					(name "D21/A7/RX5/BCLK1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 1.27 180)
+					(length 5.08)
+					(name "D20/A6/TX5/LRCLK1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -1.27 180)
+					(length 5.08)
+					(name "D19/A5/SCL0/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -3.81 180)
+					(length 5.08)
+					(name "D18/A4/SDA0/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -6.35 180)
+					(length 5.08)
+					(name "D17/A3/TX4/SDA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -8.89 180)
+					(length 5.08)
+					(name "D16/A2/RX4/SCL1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -11.43 180)
+					(length 5.08)
+					(name "D15/A1/RX3/SIN/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -13.97 180)
+					(length 5.08)
+					(name "D14/A0/TX3/SOUT/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 31.75 -16.51 180)
+					(length 5.08)
+					(name "D13/LED/SCK/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 162.56 92.71)
+		(uuid "0aaf29ab-e3cf-4853-b8af-95d3a23b6078")
+	)
+	(no_connect
+		(at 162.56 90.17)
+		(uuid "28df19fa-532d-4257-a7ac-863bd37cb043")
+	)
+	(no_connect
+		(at 99.06 85.09)
+		(uuid "5d3485c8-a685-46b6-aeb7-0c4d7a9f4432")
+	)
+	(no_connect
+		(at 99.06 92.71)
+		(uuid "629d6512-dcb1-4534-b9bd-34f8a0247616")
+	)
+	(no_connect
+		(at 162.56 77.47)
+		(uuid "7fe8b76e-e5c5-4f88-a41b-7473ffca8eeb")
+	)
+	(no_connect
+		(at 162.56 102.87)
+		(uuid "84623e8a-8e3b-49e8-8d46-b5ba743cbf80")
+	)
+	(no_connect
+		(at 99.06 95.25)
+		(uuid "8fccfb32-741c-4306-ae1a-39abbea4c3bb")
+	)
+	(no_connect
+		(at 99.06 82.55)
+		(uuid "9628fae7-6d92-4274-90e6-e692fc7c1e3d")
+	)
+	(no_connect
+		(at 162.56 100.33)
+		(uuid "9c1c2bec-d385-4e37-ab19-128ae0c611da")
+	)
+	(no_connect
+		(at 99.06 80.01)
+		(uuid "a7b28c3f-e228-4ecd-8b09-6115975a2a80")
+	)
+	(no_connect
+		(at 99.06 87.63)
+		(uuid "b44619ed-5b31-4d6a-819e-91f5c3da8b24")
+	)
+	(no_connect
+		(at 99.06 90.17)
+		(uuid "da4dd3d1-a938-4e5c-a2e3-21165e7932eb")
+	)
+	(no_connect
+		(at 162.56 85.09)
+		(uuid "dfce05db-3af1-4277-bb26-f7cc613f5179")
+	)
+	(no_connect
+		(at 162.56 87.63)
+		(uuid "eefc6ff7-f36e-4cb0-a174-d7f86957066f")
+	)
+	(wire
+		(pts
+			(xy 162.56 110.49) (xy 165.1 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049c1833-6812-40d6-beab-2f4788d0a882")
+	)
+	(wire
+		(pts
+			(xy 50.8 52.07) (xy 53.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c1f377-8bc9-409b-a964-cf77b7ae1204")
+	)
+	(wire
+		(pts
+			(xy 213.36 87.63) (xy 213.36 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2defd2c0-259e-4f78-a801-eb7bcb58137c")
+	)
+	(wire
+		(pts
+			(xy 50.8 57.15) (xy 53.34 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e55b120-b82d-4c3a-ae26-6164ba8569c4")
+	)
+	(wire
+		(pts
+			(xy 99.06 102.87) (xy 96.52 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42ba0442-fb2f-4be0-aa73-f0572a4140ed")
+	)
+	(wire
+		(pts
+			(xy 162.56 82.55) (xy 165.1 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4390bd4b-be01-493d-a45f-afb67e04d079")
+	)
+	(wire
+		(pts
+			(xy 213.36 74.93) (xy 213.36 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5185ac7e-859f-4d3e-a3f9-e132ee489413")
+	)
+	(wire
+		(pts
+			(xy 99.06 107.95) (xy 96.52 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "592c4b91-9091-40ca-8b6e-6e7db65d4880")
+	)
+	(wire
+		(pts
+			(xy 99.06 110.49) (xy 96.52 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ebaad83-0bf6-49ab-8919-a9ace68c182d")
+	)
+	(wire
+		(pts
+			(xy 50.8 49.53) (xy 53.34 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75fd2ba2-1ba1-462d-8259-24b2878b020b")
+	)
+	(wire
+		(pts
+			(xy 222.25 74.93) (xy 222.25 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "781133df-d046-414e-89cc-31396bd43551")
+	)
+	(wire
+		(pts
+			(xy 162.56 107.95) (xy 165.1 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c1496fd-ae38-445c-a15c-52891739ca0e")
+	)
+	(wire
+		(pts
+			(xy 162.56 97.79) (xy 165.1 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9140bc69-83c4-4991-89ee-255c111a2892")
+	)
+	(wire
+		(pts
+			(xy 50.8 54.61) (xy 53.34 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96442ec7-f3b6-41fb-afcf-989c4cc22134")
+	)
+	(wire
+		(pts
+			(xy 162.56 105.41) (xy 165.1 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adb1626d-78b5-4991-89f3-1bf7778fd7da")
+	)
+	(wire
+		(pts
+			(xy 99.06 97.79) (xy 96.52 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2447091-f684-4a0d-9062-acc82fa117e7")
+	)
+	(wire
+		(pts
+			(xy 222.25 87.63) (xy 222.25 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2ac3349-5ead-42c8-b972-36a16e12cf2c")
+	)
+	(wire
+		(pts
+			(xy 96.52 105.41) (xy 99.06 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e2d9c8-26bf-4f65-9703-cfb5e0b11fd9")
+	)
+	(wire
+		(pts
+			(xy 99.06 77.47) (xy 96.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe66722-87dc-4eb9-827a-f9bebd86fd7d")
+	)
+	(wire
+		(pts
+			(xy 162.56 95.25) (xy 165.1 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f204984b-f63c-47dc-b75b-874adb0bb050")
+	)
+	(wire
+		(pts
+			(xy 99.06 100.33) (xy 96.52 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3797c91-461e-4a79-96de-7609c761d9bb")
+	)
+	(label "+3.3V"
+		(at 165.1 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01cbde11-2ca0-4710-89c5-cd260f7db77b")
+	)
+	(label "SCL"
+		(at 53.34 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "379eb0e7-2c05-4ffd-bfb8-4a312daf3f29")
+	)
+	(label "SDA"
+		(at 53.34 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "494bea23-8c97-400c-b12c-9bbc7f087e31")
+	)
+	(label "GND"
+		(at 53.34 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ce80f40-b6e5-465f-9719-2a40f84fbdc6")
+	)
+	(label "+3.3V"
+		(at 222.25 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75b12cc4-f656-4fac-8857-4335a1f83312")
+	)
+	(label "GND"
+		(at 96.52 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9126d694-bf93-4a59-b50f-111635dd2f25")
+	)
+	(label "SCL"
+		(at 213.36 90.17 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9ea3556f-c37d-4e1a-9090-769f46c5532b")
+	)
+	(label "SDA"
+		(at 165.1 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb4b9868-680c-45dd-9b3b-065b07ea5b7c")
+	)
+	(label "+3.3V"
+		(at 53.34 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce4887f1-0cf8-485c-9565-7fed95495577")
+	)
+	(label "+3.3V"
+		(at 213.36 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6ef55cd-6602-4eb5-9ae9-d0232e62ba3a")
+	)
+	(label "SDA"
+		(at 222.25 90.17 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e35534d2-33da-425c-86ff-a765ab54e9bd")
+	)
+	(label "SCL"
+		(at 165.1 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed04ec97-0f1e-486b-8177-dccd2921d94a")
+	)
+	(hierarchical_label "~{JOYSTICK_MOTOR_CS}"
+		(shape output)
+		(at 165.1 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "52d8d334-8e4e-401e-9281-f1d7acbd5dc8")
+	)
+	(hierarchical_label "BRAKE_PWM"
+		(shape output)
+		(at 96.52 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60904866-d656-44a3-ad6d-2b6f360ea57a")
+	)
+	(hierarchical_label "BASE_MOTOR_DIAG0"
+		(shape input)
+		(at 96.52 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72fd0100-dcfd-4fdb-a00c-9575451f4f9e")
+	)
+	(hierarchical_label "SCL"
+		(shape output)
+		(at 50.8 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "883eb81f-6714-4e83-a230-58b935f4fe11")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 50.8 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89f90444-e124-4e46-a8df-25c19fc07128")
+	)
+	(hierarchical_label "+3.3V"
+		(shape passive)
+		(at 50.8 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "95286a26-57de-4ee3-a168-06c0e5fef07f")
+	)
+	(hierarchical_label "CIPO"
+		(shape input)
+		(at 96.52 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9ce89542-1901-4a2d-acec-71908556ac19")
+	)
+	(hierarchical_label "SCK"
+		(shape output)
+		(at 165.1 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "adbd55a7-5893-4b23-bb4a-2586fc444259")
+	)
+	(hierarchical_label "SDA"
+		(shape bidirectional)
+		(at 50.8 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b2c6852d-a0e4-4cf7-a3b0-d26b04a29dc2")
+	)
+	(hierarchical_label "AUDIO"
+		(shape output)
+		(at 96.52 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d57f1b03-ef4e-4a0b-9bed-18c858f8a976")
+	)
+	(hierarchical_label "JOYSTICK_MOTOR_DIAG0"
+		(shape input)
+		(at 165.1 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "de69b71c-6d90-405b-883d-0290adc55793")
+	)
+	(hierarchical_label "~{BASE_MOTOR_CS}"
+		(shape output)
+		(at 96.52 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5157f85-4455-4184-8a17-cf69981e7c71")
+	)
+	(hierarchical_label "COPI"
+		(shape output)
+		(at 96.52 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee5ac091-b1ba-430a-b8d7-a2426c57897b")
+	)
+	(symbol
+		(lib_id "Janelia:R_1.8k_0402")
+		(at 222.25 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0350f20a-2cd9-47ce-8ce8-a5bea3c3176c")
+		(property "Reference" "R402"
+			(at 223.52 81.28 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 222.25 81.28 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:R_0402_1005Metric"
+			(at 220.472 81.28 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.282 81.28 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "JLCPCB"
+			(at 226.822 78.74 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "C409855"
+			(at 229.362 76.2 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "RES SMD 1.8K OHM 5% 100mW"
+			(at 231.902 73.66 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 222.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "PANASONIC"
+			(at 222.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ERJ2GEJ182X"
+			(at 222.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C409855"
+			(at 222.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e0275e2-ea88-4acd-b433-46f47fcdcbcd")
+		)
+		(pin "1"
+			(uuid "6fc37d8f-c105-47d9-9470-939ac2a7a521")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/90ad6836-1738-4b32-a341-0a0b169f4662"
+					(reference "R402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:R_1.8k_0402")
+		(at 213.36 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3171934d-9186-408b-9fc1-3f1c0af3680b")
+		(property "Reference" "R401"
+			(at 214.63 81.28 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 213.36 81.28 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:R_0402_1005Metric"
+			(at 211.582 81.28 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.392 81.28 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "JLCPCB"
+			(at 217.932 78.74 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "C409855"
+			(at 220.472 76.2 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "RES SMD 1.8K OHM 5% 100mW"
+			(at 223.012 73.66 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "PANASONIC"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ERJ2GEJ182X"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C409855"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "808c4f1f-c0b4-448e-b616-d15eb78e4e12")
+		)
+		(pin "1"
+			(uuid "d923e54d-882f-44ad-ad4a-2c6a675a3427")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/90ad6836-1738-4b32-a341-0a0b169f4662"
+					(reference "R401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:TEENSY_4.0_HEADERS")
+		(at 130.81 93.98 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b045351e-9cc0-4f0f-8399-064841114fdf")
+		(property "Reference" "A401"
+			(at 130.81 74.93 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TEENSY_4.0_HEADERS"
+			(at 130.81 113.03 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Janelia:TEENSY_4.0_HEADERS"
+			(at 130.81 67.31 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 24.13 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "S7047-ND"
+			(at 130.81 62.23 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "CONN HDR 14POS 0.1 GOLD PCB"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "PPPC141LFBN-RC"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90750c28-0ad0-4ffc-8f07-ffc887598c2d")
+		)
+		(pin "5"
+			(uuid "79cb0e4a-7d5d-4f7b-9100-e5b044b909ab")
+		)
+		(pin "21"
+			(uuid "25b60168-fe0b-44d3-b781-c0aa64cee92c")
+		)
+		(pin "V"
+			(uuid "5ccf1324-6021-4b6d-ac74-1c45648490d7")
+		)
+		(pin "7"
+			(uuid "07c181f8-6e60-476c-9fb2-0eaa5a45d17e")
+		)
+		(pin "9"
+			(uuid "f69ddae8-b56e-4d39-99ea-1c559f961f18")
+		)
+		(pin "17"
+			(uuid "c461debc-cac3-40dd-8c66-150213d389f0")
+		)
+		(pin "6"
+			(uuid "3c267955-6d34-47c9-9ec5-aa35cd1bf5c8")
+		)
+		(pin "3"
+			(uuid "8182ec73-8450-4f6e-a82d-9137b4560648")
+		)
+		(pin "0"
+			(uuid "71db777f-94a3-40c8-96fe-88b1156842b1")
+		)
+		(pin "1"
+			(uuid "394bcc9b-0b36-4fe3-bb14-7c718ca3fd82")
+		)
+		(pin "10"
+			(uuid "235575ab-c7e0-4d7c-be33-713eac9bdf32")
+		)
+		(pin "8"
+			(uuid "fdba4d69-7560-495d-b1e7-67355024016e")
+		)
+		(pin "18"
+			(uuid "c68e339e-39bf-4664-ba00-3bbae8c8ada4")
+		)
+		(pin "12"
+			(uuid "edd10c8a-2951-46f3-80ef-dd66160c1758")
+		)
+		(pin "11"
+			(uuid "32c4fa3c-4983-465a-9a1b-674b562a73bf")
+		)
+		(pin "13"
+			(uuid "048424e9-bc72-42db-baca-747d3e91cc3f")
+		)
+		(pin "3V3"
+			(uuid "1ceffae1-6221-4e46-a9d1-7b538e35e0b6")
+		)
+		(pin "GND"
+			(uuid "b5c7a44d-71c2-4926-a9a0-f5d5e9b87e8c")
+		)
+		(pin "4"
+			(uuid "71eff276-56bc-4de6-b1ae-ea8ef0bf8591")
+		)
+		(pin "19"
+			(uuid "e6d3727b-5996-4c75-8f15-d48324f810f7")
+		)
+		(pin "22"
+			(uuid "903037e8-9f3c-4e66-99a7-eda5e9f5181f")
+		)
+		(pin "23"
+			(uuid "99581003-a324-49c0-91b4-3d0cab4cee50")
+		)
+		(pin "20"
+			(uuid "99a3dd1b-2a49-470c-b0f6-06e5b1c2bb73")
+		)
+		(pin "14"
+			(uuid "48ee26d8-609e-4749-82c8-176d28d239ab")
+		)
+		(pin "15"
+			(uuid "95038dd0-5290-448c-ae01-34775cb6bb9f")
+		)
+		(pin "16"
+			(uuid "08f60184-0f9e-4828-b1c0-a0caefe23422")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/90ad6836-1738-4b32-a341-0a0b169f4662"
+					(reference "A401")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

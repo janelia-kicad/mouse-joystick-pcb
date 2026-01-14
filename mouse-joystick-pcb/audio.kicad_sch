@@ -1,946 +1,2654 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid d29cd524-5d9f-441e-8621-d552a965ca40)
-
-  (paper "A4")
-
-  (title_block
-    (title "mouse-joystick-pcb")
-    (date "2024-10-24")
-    (rev "1.0")
-    (company "Peter Polidoro")
-  )
-
-  (lib_symbols
-    (symbol "Janelia:Amplifier_Audio_TPA6204A1DRBR" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 15.24 11.43 0) (do_not_autoplace)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "TPA6204A1DRBR" (at 15.24 -11.43 0) (do_not_autoplace)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Footprint" "Janelia:DRB8_1P75X1P5" (at 0 54.61 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "" (at -35.56 3.81 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Synopsis" "IC AMP CLASS AB MONO 1.7W" (at 0 49.53 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Package" "QFN-8-EP(3x3)" (at 0 46.99 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer" "Texas Instruments" (at 0 41.91 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "TPA6204A1DRBR" (at 0 52.07 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor" "Digi-Key" (at 0 44.45 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor Part Number" "296-17059-1-ND" (at 0 36.83 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C12400" (at 0 39.37 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "TPA6204A1DRBR" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Monaural 1.7Wx1@8Ω AB Class Amplifier QFN-8-EP(3x3) Audio Amplifiers ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "DRB8_1P75X1P5" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Amplifier_Audio_TPA6204A1DRBR_1_1"
-        (rectangle (start -15.24 10.16) (end 15.24 -10.16)
-          (stroke (width 0) (type default))
-          (fill (type background))
-        )
-        (pin input line (at -20.32 6.35 0) (length 5.08)
-          (name "~{SHUTDOWN}" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -20.32 -6.35 0) (length 5.08)
-          (name "BYPASS" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -20.32 -1.27 0) (length 5.08)
-          (name "IN+" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -20.32 1.27 0) (length 5.08)
-          (name "IN-" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 20.32 1.27 180) (length 5.08)
-          (name "VO+" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 15.24 270) (length 5.08)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -1.27 -15.24 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 20.32 -1.27 180) (length 5.08)
-          (name "VO-" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 1.27 -15.24 90) (length 5.08)
-          (name "EPAD" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Janelia:C_0.22uF_25V_0402" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0 2.54 0)
-        (effects (font (size 1.016 1.016)) (justify left))
-      )
-      (property "Value" "0.22uF_25V" (at 0 0 0)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Footprint" "Janelia:C_0402_1005Metric" (at 0.9652 -3.81 0)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Datasheet" "" (at 0 2.54 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor" "Digi-Key" (at 2.54 5.08 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "490-12245-1-ND" (at 5.08 7.62 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "CAP CER 0.22UF 25V X6S" (at 7.62 10.16 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Manufacturer" "Murata Electronics" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "GRT155C81E224KE01D" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Package" "0402" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C126623" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "0.22 µF ±10% 25V Ceramic Capacitor X6S 0402 (1005 Metric)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SM* C? C1-1" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_0.22uF_25V_0402_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -0.762)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 0.762)
-            (xy 2.032 0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_0.22uF_25V_0402_1_1"
-        (pin passive line (at 0 5.08 270) (length 4.318)
-          (name "~" (effects (font (size 1.016 1.016))))
-          (number "1" (effects (font (size 1.016 1.016))))
-        )
-        (pin passive line (at 0 -5.08 90) (length 4.318)
-          (name "~" (effects (font (size 1.016 1.016))))
-          (number "2" (effects (font (size 1.016 1.016))))
-        )
-      )
-    )
-    (symbol "Janelia:C_1uF_35V_0402" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0 2.54 0)
-        (effects (font (size 1.016 1.016)) (justify left))
-      )
-      (property "Value" "1uF_35V" (at 0 0 0)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Footprint" "Janelia:C_0402_1005Metric" (at 0.9652 -3.81 0)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor" "Digi-Key" (at 2.54 5.08 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "1276-6796-1-ND" (at 5.08 7.62 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "CAP CER 1UF 35V X5R" (at 7.62 10.16 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Package" "0402" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer" "Samsung Electro-Mechanics" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "CL05A105KL5NRNC" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C307413" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "1 µF ±10% 35V Ceramic Capacitor X5R 0402 (1005 Metric)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SM* C? C1-1" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_1uF_35V_0402_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -0.762)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 0.762)
-            (xy 2.032 0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_1uF_35V_0402_1_1"
-        (pin passive line (at 0 5.08 270) (length 4.318)
-          (name "~" (effects (font (size 1.016 1.016))))
-          (number "1" (effects (font (size 1.016 1.016))))
-        )
-        (pin passive line (at 0 -5.08 90) (length 4.318)
-          (name "~" (effects (font (size 1.016 1.016))))
-          (number "2" (effects (font (size 1.016 1.016))))
-        )
-      )
-    )
-    (symbol "Janelia:R_40k_100mW_0603" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.016 1.016)))
-      )
-      (property "Value" "40k" (at 0 0 90) (do_not_autoplace)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Footprint" "Janelia:R_0603_1608Metric" (at -1.778 0 90)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Datasheet" "" (at 2.032 0 90)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Vendor" "JLCPCB" (at 4.572 2.54 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "C3016445" (at 7.112 5.08 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "RES SMD 40k OHM 1% 100mW" (at 9.652 7.62 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Package" "0603" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer" "VO" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "SCR0603F40K" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C3016445" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "100mW Thick Film Resistors 75V ±1% 40kΩ 0603 Chip Resistor - Surface Mount ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R? SM0603 SM0805 R?-* SM1206" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_40k_100mW_0603_0_1"
-        (rectangle (start -1.016 3.81) (end 1.016 -3.81)
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_40k_100mW_0603_1_1"
-        (pin passive line (at 0 6.35 270) (length 2.54)
-          (name "~" (effects (font (size 1.524 1.524))))
-          (number "1" (effects (font (size 1.524 1.524))))
-        )
-        (pin passive line (at 0 -6.35 90) (length 2.54)
-          (name "~" (effects (font (size 1.524 1.524))))
-          (number "2" (effects (font (size 1.524 1.524))))
-        )
-      )
-    )
-    (symbol "Janelia:Speaker_13x13mm_8Ohm_700mW" (pin_names (offset 0.002)) (in_bom yes) (on_board yes)
-      (property "Reference" "SP" (at 3.81 -1.27 0) (do_not_autoplace)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Speaker_13x13mm_8Ohm_700mW" (at 3.81 -3.81 0) (do_not_autoplace)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Janelia:Speaker_13x13mm_KLJ-01304T-08R07W" (at 0 -11.43 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at -0.254 -1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Synopsis" "SPEAKER 8OHM 700MW" (at 0 -24.13 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Manufacturer" "KELIKING" (at 0 -31.75 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "KLJ-01304T-08R07W" (at 0 -13.97 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor" "JLCPCB" (at 0 -19.05 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "C18186315" (at 0 -21.59 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Sim.Enable" "0" (at 0 -16.51 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C18186315" (at 0 -26.67 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "SMD Speakers ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Speaker_13x13mm_8Ohm_700mW_0_0"
-        (rectangle (start -2.54 1.27) (end 1.016 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 1.27)
-            (xy 3.556 3.81)
-            (xy 3.556 -6.35)
-            (xy 1.016 -3.81)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Speaker_13x13mm_8Ohm_700mW_1_1"
-        (pin input line (at -5.08 0 0) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -5.08 -2.54 0) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin no_connect line (at 0 3.81 270) (length 2.54) hide
-          (name "NC" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin no_connect line (at 0 -6.35 90) (length 2.54) hide
-          (name "NC" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (wire (pts (xy 90.17 53.34) (xy 92.71 53.34))
-    (stroke (width 0) (type default))
-    (uuid 183b0c98-424c-4746-a148-7ff283082ee4)
-  )
-  (wire (pts (xy 102.87 90.17) (xy 100.33 90.17))
-    (stroke (width 0) (type default))
-    (uuid 19d3f52b-a6eb-4988-8f3d-cea2ffaf6320)
-  )
-  (wire (pts (xy 132.08 71.12) (xy 132.08 73.66))
-    (stroke (width 0) (type default))
-    (uuid 1edf7ef2-a915-4fd1-83a4-cde86fe13890)
-  )
-  (wire (pts (xy 168.91 96.52) (xy 171.45 96.52))
-    (stroke (width 0) (type default))
-    (uuid 5707d462-ada4-4b6c-90f6-74743df2729a)
-  )
-  (wire (pts (xy 125.73 101.6) (xy 128.27 101.6))
-    (stroke (width 0) (type default))
-    (uuid 5fc5384f-9c38-4030-9119-624609491972)
-  )
-  (wire (pts (xy 132.08 116.84) (xy 132.08 119.38))
-    (stroke (width 0) (type default))
-    (uuid 63ccf009-3a82-492f-be33-cdc8952d987a)
-  )
-  (wire (pts (xy 209.55 96.52) (xy 207.01 96.52))
-    (stroke (width 0) (type default))
-    (uuid 6bf1fb30-6276-439e-8c78-5c37c8363146)
-  )
-  (wire (pts (xy 209.55 93.98) (xy 207.01 93.98))
-    (stroke (width 0) (type default))
-    (uuid 871b40ce-da4d-4151-a145-555b7740c043)
-  )
-  (wire (pts (xy 85.09 109.22) (xy 85.09 111.76))
-    (stroke (width 0) (type default))
-    (uuid 8cab0a18-be88-46e5-bce8-483c0d5026ea)
-  )
-  (wire (pts (xy 85.09 90.17) (xy 87.63 90.17))
-    (stroke (width 0) (type default))
-    (uuid 944c5d83-d003-4028-a0f4-190a8bb0baa1)
-  )
-  (wire (pts (xy 72.39 90.17) (xy 74.93 90.17))
-    (stroke (width 0) (type default))
-    (uuid 96101427-de1e-4c73-b441-d344106af552)
-  )
-  (wire (pts (xy 85.09 96.52) (xy 85.09 99.06))
-    (stroke (width 0) (type default))
-    (uuid 99304b1f-b11b-4af2-8187-b9eebc841f7f)
-  )
-  (wire (pts (xy 125.73 93.98) (xy 128.27 93.98))
-    (stroke (width 0) (type default))
-    (uuid 9a09879c-573f-424a-8365-6292bea9c51b)
-  )
-  (wire (pts (xy 149.86 110.49) (xy 149.86 113.03))
-    (stroke (width 0) (type default))
-    (uuid a1988e35-264a-4129-896a-45fdc41e6eb5)
-  )
-  (wire (pts (xy 90.17 50.8) (xy 92.71 50.8))
-    (stroke (width 0) (type default))
-    (uuid ab111923-645f-46bf-ab09-ba3d013e07ec)
-  )
-  (wire (pts (xy 87.63 96.52) (xy 85.09 96.52))
-    (stroke (width 0) (type default))
-    (uuid ad92bb8f-1a09-4717-9884-95d18e020b92)
-  )
-  (wire (pts (xy 125.73 96.52) (xy 128.27 96.52))
-    (stroke (width 0) (type default))
-    (uuid aecb3311-f211-4a0b-af6d-52ce3cf166ba)
-  )
-  (wire (pts (xy 168.91 93.98) (xy 171.45 93.98))
-    (stroke (width 0) (type default))
-    (uuid bd269b66-c111-4a45-817b-764909db234f)
-  )
-  (wire (pts (xy 102.87 96.52) (xy 100.33 96.52))
-    (stroke (width 0) (type default))
-    (uuid c81dd91a-45c9-4c6c-9b45-786e91a6b5ab)
-  )
-  (wire (pts (xy 132.08 129.54) (xy 132.08 132.08))
-    (stroke (width 0) (type default))
-    (uuid c9ebf0dd-1a75-4456-b8cb-ff4b94305052)
-  )
-  (wire (pts (xy 128.27 88.9) (xy 125.73 88.9))
-    (stroke (width 0) (type default))
-    (uuid d8784361-1c0a-42a1-82cd-daaa17a7ee8f)
-  )
-  (wire (pts (xy 147.32 110.49) (xy 147.32 113.03))
-    (stroke (width 0) (type default))
-    (uuid daa95a39-53a1-4258-abd8-ade3de316d6e)
-  )
-  (wire (pts (xy 148.59 80.01) (xy 148.59 77.47))
-    (stroke (width 0) (type default))
-    (uuid ebd02b53-0a6a-4098-b56e-3782c8fce66c)
-  )
-  (wire (pts (xy 132.08 60.96) (xy 132.08 58.42))
-    (stroke (width 0) (type default))
-    (uuid f0d5f34c-f0db-4cb9-9dda-f86f1535f618)
-  )
-
-  (label "GND" (at 149.86 113.03 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 1aa564f7-a830-45a1-b654-c223e1024c72)
-  )
-  (label "VO+" (at 207.01 93.98 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 1c748998-989b-4aaa-a79e-baf1fb327581)
-  )
-  (label "BYPASS" (at 125.73 101.6 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 36f1c223-445d-42c6-990c-89488ef01dcd)
-  )
-  (label "GND" (at 85.09 111.76 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 3d073475-e6d5-4480-ac09-58aa94590b4c)
-  )
-  (label "IN-" (at 102.87 90.17 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 61404d0d-5478-4d15-906e-faaa74f7cd83)
-  )
-  (label "IN+" (at 102.87 96.52 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 623e2b4f-62fc-43de-8e67-6f6bbb0f331d)
-  )
-  (label "VO-" (at 207.01 96.52 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 6e778183-973b-4544-b348-e517db80dd7d)
-  )
-  (label "+5V" (at 132.08 58.42 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 867fd8bf-e570-4ccd-9ceb-5981fd56c818)
-  )
-  (label "VO-" (at 171.45 96.52 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 8acb4b34-7eaf-4c8c-87ee-e6b4564eb3d4)
-  )
-  (label "+5V" (at 125.73 88.9 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9f5e04eb-0a70-467a-95be-bd60b8cc8a75)
-  )
-  (label "IN+" (at 125.73 96.52 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid a807ef34-e595-4cec-93aa-a0a955142460)
-  )
-  (label "IN-" (at 125.73 93.98 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid b8cde88f-3218-41da-b79f-d79fd0f44789)
-  )
-  (label "+5V" (at 148.59 77.47 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid bc5b1c7d-bf15-4562-8775-749f6c3a720f)
-  )
-  (label "VO+" (at 171.45 93.98 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid be51909c-b502-4c62-be38-af4b85b829c9)
-  )
-  (label "GND" (at 147.32 113.03 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid c3aa9ab8-f01f-4e85-b4d2-f38992546806)
-  )
-  (label "+5V" (at 92.71 50.8 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c6629631-c853-4298-ada0-fa83e50521f3)
-  )
-  (label "GND" (at 132.08 132.08 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid c95a6250-3dd3-43f3-9e24-549a5a149ce0)
-  )
-  (label "GND" (at 92.71 53.34 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid cbf0b677-0fdb-4a73-aa8a-e14610a1874c)
-  )
-  (label "BYPASS" (at 132.08 116.84 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ccabed7e-39ae-4ab7-9155-b19ddcd80dd2)
-  )
-  (label "GND" (at 132.08 73.66 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid fb61df4e-d32b-4097-921c-f10cdfc99409)
-  )
-
-  (hierarchical_label "GND" (shape passive) (at 90.17 53.34 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 03515758-d302-4eac-8fd9-52a76912d9d8)
-  )
-  (hierarchical_label "AUDIO" (shape input) (at 72.39 90.17 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 788f1e1c-69ff-4cee-9975-276c778e4b69)
-  )
-  (hierarchical_label "+5V" (shape passive) (at 90.17 50.8 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b25fa490-55f5-4057-9ad9-bdf1ea31abed)
-  )
-
-  (symbol (lib_id "Janelia:R_40k_100mW_0603") (at 93.98 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 37dc1a0e-aabc-4fd0-ae0d-ea36ea8fc93d)
-    (property "Reference" "R601" (at 93.98 87.63 90)
-      (effects (font (size 1.016 1.016)))
-    )
-    (property "Value" "40k" (at 93.98 90.17 90) (do_not_autoplace)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "Janelia:R_0603_1608Metric" (at 93.98 91.948 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 93.98 88.138 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Vendor" "JLCPCB" (at 91.44 85.598 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "C3016445" (at 88.9 83.058 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "RES SMD 40k OHM 1% 100mW" (at 86.36 80.518 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Package" "0603" (at 93.98 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "VO" (at 93.98 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "SCR0603F40K" (at 93.98 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C3016445" (at 93.98 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid c3063f6b-640b-4227-9539-871768a9a257))
-    (pin "1" (uuid bbdce42e-a54c-4b76-b953-00ade70a5422))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "R601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:Amplifier_Audio_TPA6204A1DRBR") (at 148.59 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 41f466d3-e023-453a-ae07-8c211ec161ca)
-    (property "Reference" "U601" (at 163.83 83.82 0) (do_not_autoplace)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "TPA6204A1DRBR" (at 163.83 106.68 0) (do_not_autoplace)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "Janelia:DRB8_1P75X1P5" (at 148.59 40.64 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "" (at 113.03 91.44 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Synopsis" "IC AMP CLASS AB MONO 1.7W" (at 148.59 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "QFN-8-EP(3x3)" (at 148.59 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Texas Instruments" (at 148.59 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "TPA6204A1DRBR" (at 148.59 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 148.59 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Part Number" "296-17059-1-ND" (at 148.59 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C12400" (at 148.59 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "5" (uuid fedd52e2-a0a3-45da-b9b6-739705578fe6))
-    (pin "4" (uuid 67117380-3c10-4600-92ae-4ed79d2ae6de))
-    (pin "1" (uuid 48fb5330-4532-4ce6-9f95-75d06a0519ad))
-    (pin "7" (uuid f47f25fd-f2a9-4d1e-830c-204e518d9dd0))
-    (pin "6" (uuid f349aca8-048f-4387-b518-3dddb8e7985e))
-    (pin "2" (uuid 38c7bc00-52ab-4152-a035-cce9657798de))
-    (pin "3" (uuid fef7a297-fb49-4d99-b36d-f465ca9888aa))
-    (pin "9" (uuid 23dbba61-4f93-4b2d-9768-8ecf62dfbdab))
-    (pin "8" (uuid 7d065fe0-6e72-4174-9676-80bf8d807444))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "U601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:C_0.22uF_25V_0402") (at 80.01 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5bb67843-d505-475a-b78e-0cd6ae68fae4)
-    (property "Reference" "C601" (at 80.01 83.82 90)
-      (effects (font (size 1.016 1.016)))
-    )
-    (property "Value" "0.22uF_25V" (at 80.01 86.36 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "Janelia:C_0402_1005Metric" (at 83.82 89.2048 0)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 77.47 90.17 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 74.93 87.63 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "490-12245-1-ND" (at 72.39 85.09 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "CAP CER 0.22UF 25V X6S" (at 69.85 82.55 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "Murata Electronics" (at 80.01 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "GRT155C81E224KE01D" (at 80.01 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0402" (at 80.01 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C126623" (at 80.01 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 918b2303-b790-4119-ae34-3c228926bbf7))
-    (pin "2" (uuid 433e3c5e-22f9-4ba7-8d41-5fb71905c45e))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "C601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:C_0.22uF_25V_0402") (at 85.09 104.14 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5e7ce942-7081-459f-8617-afdaf7aa49ed)
-    (property "Reference" "C602" (at 88.9 103.505 0)
-      (effects (font (size 1.016 1.016)) (justify right))
-    )
-    (property "Value" "0.22uF_25V" (at 88.9 105.4099 0)
-      (effects (font (size 0.762 0.762)) (justify right))
-    )
-    (property "Footprint" "Janelia:C_0402_1005Metric" (at 84.1248 100.33 0)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 85.09 106.68 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 82.55 109.22 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "490-12245-1-ND" (at 80.01 111.76 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "CAP CER 0.22UF 25V X6S" (at 77.47 114.3 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "Murata Electronics" (at 85.09 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "GRT155C81E224KE01D" (at 85.09 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0402" (at 85.09 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C126623" (at 85.09 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5ca5a772-99dd-4f50-a3a7-b667eecfe303))
-    (pin "2" (uuid 389b7fb3-7548-41c1-bc86-ac1653412ce5))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "C602") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:R_40k_100mW_0603") (at 93.98 96.52 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a1f57311-c8d1-4fc3-91e1-9abad03175f9)
-    (property "Reference" "R602" (at 93.98 93.98 90)
-      (effects (font (size 1.016 1.016)))
-    )
-    (property "Value" "40k" (at 93.98 96.52 90) (do_not_autoplace)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "Janelia:R_0603_1608Metric" (at 93.98 98.298 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 93.98 94.488 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Vendor" "JLCPCB" (at 91.44 91.948 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "C3016445" (at 88.9 89.408 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "RES SMD 40k OHM 1% 100mW" (at 86.36 86.868 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Package" "0603" (at 93.98 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "VO" (at 93.98 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "SCR0603F40K" (at 93.98 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C3016445" (at 93.98 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid b93fbca5-c301-4afa-b44a-5c7b1e8fee74))
-    (pin "1" (uuid 4c5373a0-8f78-4742-a695-b035074785c4))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "R602") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:Speaker_13x13mm_8Ohm_700mW") (at 214.63 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ad1ccb34-13b1-4fd9-a627-e677a344805c)
-    (property "Reference" "SP601" (at 218.44 95.25 0) (do_not_autoplace)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Speaker_13x13mm_8Ohm_700mW" (at 218.44 97.79 0) (do_not_autoplace)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Janelia:Speaker_13x13mm_KLJ-01304T-08R07W" (at 214.63 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 214.376 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Synopsis" "SPEAKER 8OHM 700MW" (at 214.63 118.11 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "KELIKING" (at 214.63 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "KLJ-01304T-08R07W" (at 214.63 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "JLCPCB" (at 214.63 113.03 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "C18186315" (at 214.63 115.57 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Sim.Enable" "0" (at 214.63 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C18186315" (at 214.63 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "4" (uuid 188c383b-e62a-48f2-8c99-0bbe3e7ec743))
-    (pin "2" (uuid 6599a64b-bc87-42f9-96a9-ac91236c129f))
-    (pin "3" (uuid 25458f54-3cd7-4d8e-8a23-925e227f9e03))
-    (pin "1" (uuid 3d69fbf0-6d12-49df-87b1-94d857b3f191))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "SP601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:C_0.22uF_25V_0402") (at 132.08 124.46 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b5bb2240-004d-4be2-895b-ab34b9a6244f)
-    (property "Reference" "C604" (at 135.89 123.825 0)
-      (effects (font (size 1.016 1.016)) (justify right))
-    )
-    (property "Value" "0.22uF_25V" (at 135.89 125.7299 0)
-      (effects (font (size 0.762 0.762)) (justify right))
-    )
-    (property "Footprint" "Janelia:C_0402_1005Metric" (at 131.1148 120.65 0)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 127 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 129.54 129.54 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "490-12245-1-ND" (at 127 132.08 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "CAP CER 0.22UF 25V X6S" (at 124.46 134.62 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "Murata Electronics" (at 132.08 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "GRT155C81E224KE01D" (at 132.08 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0402" (at 132.08 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C126623" (at 132.08 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 72146495-afac-41a6-b17c-f45575771f85))
-    (pin "2" (uuid 78337132-1e80-4abf-b41e-44055a953457))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "C604") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:C_1uF_35V_0402") (at 132.08 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid baee21dc-8908-4660-affd-db8f4205fd77)
-    (property "Reference" "C603" (at 134.62 64.77 0)
-      (effects (font (size 1.016 1.016)) (justify left))
-    )
-    (property "Value" "1uF_35V" (at 134.62 67.31 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Footprint" "Janelia:C_0402_1005Metric" (at 133.0452 69.85 0)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 66.04 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 134.62 60.96 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "1276-6796-1-ND" (at 137.16 58.42 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "CAP CER 1UF 35V X5R" (at 139.7 55.88 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Package" "0402" (at 132.08 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Samsung Electro-Mechanics" (at 132.08 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "CL05A105KL5NRNC" (at 132.08 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C307413" (at 132.08 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 6958d077-a9cf-4325-8cc5-3cbce9dbdc07))
-    (pin "1" (uuid 5774ee95-227a-46d9-8705-b335d2dff062))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
-          (reference "C603") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d29cd524-5d9f-441e-8621-d552a965ca40")
+	(paper "A4")
+	(title_block
+		(title "mouse-joystick-pcb")
+		(date "2024-10-24")
+		(rev "1.0")
+		(company "Peter Polidoro")
+	)
+	(lib_symbols
+		(symbol "Janelia:Amplifier_Audio_TPA6204A1DRBR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 15.24 11.43 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "TPA6204A1DRBR"
+				(at 15.24 -11.43 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:DRB8_1P75X1P5"
+				(at 0 54.61 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -35.56 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Monaural 1.7Wx1@8Ω AB Class Amplifier QFN-8-EP(3x3) Audio Amplifiers ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "IC AMP CLASS AB MONO 1.7W"
+				(at 0 49.53 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "QFN-8-EP(3x3)"
+				(at 0 46.99 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 0 41.91 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "TPA6204A1DRBR"
+				(at 0 52.07 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 0 44.45 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "296-17059-1-ND"
+				(at 0 36.83 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C12400"
+				(at 0 39.37 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "TPA6204A1DRBR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DRB8_1P75X1P5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Amplifier_Audio_TPA6204A1DRBR_1_1"
+				(rectangle
+					(start -15.24 10.16)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -20.32 6.35 0)
+					(length 5.08)
+					(name "~{SHUTDOWN}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 1.27 0)
+					(length 5.08)
+					(name "IN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -1.27 0)
+					(length 5.08)
+					(name "IN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 -6.35 0)
+					(length 5.08)
+					(name "BYPASS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -15.24 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -15.24 90)
+					(length 5.08)
+					(name "EPAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 1.27 180)
+					(length 5.08)
+					(name "VO+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -1.27 180)
+					(length 5.08)
+					(name "VO-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:C_0.22uF_25V_0402"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "0.22uF_25V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:C_0402_1005Metric"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.22 µF ±10% 25V Ceramic Capacitor X6S 0402 (1005 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "490-12245-1-ND"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "CAP CER 0.22UF 25V X6S"
+				(at 7.62 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Murata Electronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "GRT155C81E224KE01D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C126623"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SM* C? C1-1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0.22uF_25V_0402_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0.22uF_25V_0402_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 4.318)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 4.318)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:C_1uF_35V_0402"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1uF_35V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:C_0402_1005Metric"
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1 µF ±10% 35V Ceramic Capacitor X5R 0402 (1005 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "1276-6796-1-ND"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "CAP CER 1UF 35V X5R"
+				(at 7.62 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "CL05A105KL5NRNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C307413"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SM* C? C1-1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_1uF_35V_0402_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1uF_35V_0402_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 4.318)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 4.318)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:R_40k_100mW_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "40k"
+				(at 0 0 90)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:R_0603_1608Metric"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100mW Thick Film Resistors 75V ±1% 40kΩ 0603 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "JLCPCB"
+				(at 4.572 2.54 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "C3016445"
+				(at 7.112 5.08 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "RES SMD 40k OHM 1% 100mW"
+				(at 9.652 7.62 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "VO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "SCR0603F40K"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3016445"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R? SM0603 SM0805 R?-* SM1206"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_40k_100mW_0603_0_1"
+				(rectangle
+					(start -1.016 3.81)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_40k_100mW_0603_1_1"
+				(pin passive line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:Speaker_13x13mm_8Ohm_700mW"
+			(pin_names
+				(offset 0.002)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SP"
+				(at 3.81 -1.27 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Speaker_13x13mm_8Ohm_700mW"
+				(at 3.81 -3.81 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Janelia:Speaker_13x13mm_KLJ-01304T-08R07W"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SMD Speakers ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "SPEAKER 8OHM 700MW"
+				(at 0 -24.13 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "KELIKING"
+				(at 0 -31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "KLJ-01304T-08R07W"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "JLCPCB"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "C18186315"
+				(at 0 -21.59 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C18186315"
+				(at 0 -26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Speaker_13x13mm_8Ohm_700mW_0_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 3.556 3.81) (xy 3.556 -6.35) (xy 1.016 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Speaker_13x13mm_8Ohm_700mW_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 3.81 270)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(wire
+		(pts
+			(xy 90.17 53.34) (xy 92.71 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "183b0c98-424c-4746-a148-7ff283082ee4")
+	)
+	(wire
+		(pts
+			(xy 102.87 90.17) (xy 100.33 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19d3f52b-a6eb-4988-8f3d-cea2ffaf6320")
+	)
+	(wire
+		(pts
+			(xy 132.08 71.12) (xy 132.08 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1edf7ef2-a915-4fd1-83a4-cde86fe13890")
+	)
+	(wire
+		(pts
+			(xy 168.91 96.52) (xy 171.45 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5707d462-ada4-4b6c-90f6-74743df2729a")
+	)
+	(wire
+		(pts
+			(xy 125.73 101.6) (xy 128.27 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fc5384f-9c38-4030-9119-624609491972")
+	)
+	(wire
+		(pts
+			(xy 132.08 116.84) (xy 132.08 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63ccf009-3a82-492f-be33-cdc8952d987a")
+	)
+	(wire
+		(pts
+			(xy 209.55 96.52) (xy 207.01 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf1fb30-6276-439e-8c78-5c37c8363146")
+	)
+	(wire
+		(pts
+			(xy 209.55 93.98) (xy 207.01 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "871b40ce-da4d-4151-a145-555b7740c043")
+	)
+	(wire
+		(pts
+			(xy 85.09 109.22) (xy 85.09 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cab0a18-be88-46e5-bce8-483c0d5026ea")
+	)
+	(wire
+		(pts
+			(xy 85.09 90.17) (xy 87.63 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944c5d83-d003-4028-a0f4-190a8bb0baa1")
+	)
+	(wire
+		(pts
+			(xy 72.39 90.17) (xy 74.93 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96101427-de1e-4c73-b441-d344106af552")
+	)
+	(wire
+		(pts
+			(xy 85.09 96.52) (xy 85.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99304b1f-b11b-4af2-8187-b9eebc841f7f")
+	)
+	(wire
+		(pts
+			(xy 125.73 93.98) (xy 128.27 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a09879c-573f-424a-8365-6292bea9c51b")
+	)
+	(wire
+		(pts
+			(xy 149.86 110.49) (xy 149.86 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1988e35-264a-4129-896a-45fdc41e6eb5")
+	)
+	(wire
+		(pts
+			(xy 90.17 50.8) (xy 92.71 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab111923-645f-46bf-ab09-ba3d013e07ec")
+	)
+	(wire
+		(pts
+			(xy 87.63 96.52) (xy 85.09 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad92bb8f-1a09-4717-9884-95d18e020b92")
+	)
+	(wire
+		(pts
+			(xy 125.73 96.52) (xy 128.27 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aecb3311-f211-4a0b-af6d-52ce3cf166ba")
+	)
+	(wire
+		(pts
+			(xy 168.91 93.98) (xy 171.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd269b66-c111-4a45-817b-764909db234f")
+	)
+	(wire
+		(pts
+			(xy 102.87 96.52) (xy 100.33 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c81dd91a-45c9-4c6c-9b45-786e91a6b5ab")
+	)
+	(wire
+		(pts
+			(xy 132.08 129.54) (xy 132.08 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ebf0dd-1a75-4456-b8cb-ff4b94305052")
+	)
+	(wire
+		(pts
+			(xy 128.27 88.9) (xy 125.73 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8784361-1c0a-42a1-82cd-daaa17a7ee8f")
+	)
+	(wire
+		(pts
+			(xy 147.32 110.49) (xy 147.32 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daa95a39-53a1-4258-abd8-ade3de316d6e")
+	)
+	(wire
+		(pts
+			(xy 148.59 80.01) (xy 148.59 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebd02b53-0a6a-4098-b56e-3782c8fce66c")
+	)
+	(wire
+		(pts
+			(xy 132.08 60.96) (xy 132.08 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0d5f34c-f0db-4cb9-9dda-f86f1535f618")
+	)
+	(label "GND"
+		(at 149.86 113.03 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1aa564f7-a830-45a1-b654-c223e1024c72")
+	)
+	(label "VO+"
+		(at 207.01 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c748998-989b-4aaa-a79e-baf1fb327581")
+	)
+	(label "BYPASS"
+		(at 125.73 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36f1c223-445d-42c6-990c-89488ef01dcd")
+	)
+	(label "GND"
+		(at 85.09 111.76 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3d073475-e6d5-4480-ac09-58aa94590b4c")
+	)
+	(label "IN-"
+		(at 102.87 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61404d0d-5478-4d15-906e-faaa74f7cd83")
+	)
+	(label "IN+"
+		(at 102.87 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "623e2b4f-62fc-43de-8e67-6f6bbb0f331d")
+	)
+	(label "VO-"
+		(at 207.01 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e778183-973b-4544-b348-e517db80dd7d")
+	)
+	(label "+5V"
+		(at 132.08 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "867fd8bf-e570-4ccd-9ceb-5981fd56c818")
+	)
+	(label "VO-"
+		(at 171.45 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8acb4b34-7eaf-4c8c-87ee-e6b4564eb3d4")
+	)
+	(label "+5V"
+		(at 125.73 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f5e04eb-0a70-467a-95be-bd60b8cc8a75")
+	)
+	(label "IN+"
+		(at 125.73 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a807ef34-e595-4cec-93aa-a0a955142460")
+	)
+	(label "IN-"
+		(at 125.73 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b8cde88f-3218-41da-b79f-d79fd0f44789")
+	)
+	(label "+5V"
+		(at 148.59 77.47 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc5b1c7d-bf15-4562-8775-749f6c3a720f")
+	)
+	(label "VO+"
+		(at 171.45 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be51909c-b502-4c62-be38-af4b85b829c9")
+	)
+	(label "GND"
+		(at 147.32 113.03 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c3aa9ab8-f01f-4e85-b4d2-f38992546806")
+	)
+	(label "+5V"
+		(at 92.71 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6629631-c853-4298-ada0-fa83e50521f3")
+	)
+	(label "GND"
+		(at 132.08 132.08 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c95a6250-3dd3-43f3-9e24-549a5a149ce0")
+	)
+	(label "GND"
+		(at 92.71 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbf0b677-0fdb-4a73-aa8a-e14610a1874c")
+	)
+	(label "BYPASS"
+		(at 132.08 116.84 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ccabed7e-39ae-4ab7-9155-b19ddcd80dd2")
+	)
+	(label "GND"
+		(at 132.08 73.66 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fb61df4e-d32b-4097-921c-f10cdfc99409")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 90.17 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03515758-d302-4eac-8fd9-52a76912d9d8")
+	)
+	(hierarchical_label "AUDIO"
+		(shape input)
+		(at 72.39 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "788f1e1c-69ff-4cee-9975-276c778e4b69")
+	)
+	(hierarchical_label "+5V"
+		(shape passive)
+		(at 90.17 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b25fa490-55f5-4057-9ad9-bdf1ea31abed")
+	)
+	(symbol
+		(lib_id "Janelia:R_40k_100mW_0603")
+		(at 93.98 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37dc1a0e-aabc-4fd0-ae0d-ea36ea8fc93d")
+		(property "Reference" "R601"
+			(at 93.98 87.63 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "40k"
+			(at 93.98 90.17 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:R_0603_1608Metric"
+			(at 93.98 91.948 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 88.138 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "JLCPCB"
+			(at 91.44 85.598 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "C3016445"
+			(at 88.9 83.058 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "RES SMD 40k OHM 1% 100mW"
+			(at 86.36 80.518 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 93.98 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "VO"
+			(at 93.98 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SCR0603F40K"
+			(at 93.98 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3016445"
+			(at 93.98 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3063f6b-640b-4227-9539-871768a9a257")
+		)
+		(pin "1"
+			(uuid "bbdce42e-a54c-4b76-b953-00ade70a5422")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "R601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:Amplifier_Audio_TPA6204A1DRBR")
+		(at 148.59 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41f466d3-e023-453a-ae07-8c211ec161ca")
+		(property "Reference" "U601"
+			(at 163.83 83.82 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPA6204A1DRBR"
+			(at 163.83 106.68 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:DRB8_1P75X1P5"
+			(at 148.59 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Synopsis" "IC AMP CLASS AB MONO 1.7W"
+			(at 148.59 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "QFN-8-EP(3x3)"
+			(at 148.59 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 148.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "TPA6204A1DRBR"
+			(at 148.59 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 148.59 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "296-17059-1-ND"
+			(at 148.59 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12400"
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "fedd52e2-a0a3-45da-b9b6-739705578fe6")
+		)
+		(pin "4"
+			(uuid "67117380-3c10-4600-92ae-4ed79d2ae6de")
+		)
+		(pin "1"
+			(uuid "48fb5330-4532-4ce6-9f95-75d06a0519ad")
+		)
+		(pin "7"
+			(uuid "f47f25fd-f2a9-4d1e-830c-204e518d9dd0")
+		)
+		(pin "6"
+			(uuid "f349aca8-048f-4387-b518-3dddb8e7985e")
+		)
+		(pin "2"
+			(uuid "38c7bc00-52ab-4152-a035-cce9657798de")
+		)
+		(pin "3"
+			(uuid "fef7a297-fb49-4d99-b36d-f465ca9888aa")
+		)
+		(pin "9"
+			(uuid "23dbba61-4f93-4b2d-9768-8ecf62dfbdab")
+		)
+		(pin "8"
+			(uuid "7d065fe0-6e72-4174-9676-80bf8d807444")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "U601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:C_0.22uF_25V_0402")
+		(at 80.01 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5bb67843-d505-475a-b78e-0cd6ae68fae4")
+		(property "Reference" "C601"
+			(at 80.01 83.82 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "0.22uF_25V"
+			(at 80.01 86.36 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:C_0402_1005Metric"
+			(at 83.82 89.2048 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 90.17 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 74.93 87.63 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "490-12245-1-ND"
+			(at 72.39 85.09 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "CAP CER 0.22UF 25V X6S"
+			(at 69.85 82.55 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GRT155C81E224KE01D"
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C126623"
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "918b2303-b790-4119-ae34-3c228926bbf7")
+		)
+		(pin "2"
+			(uuid "433e3c5e-22f9-4ba7-8d41-5fb71905c45e")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "C601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:C_0.22uF_25V_0402")
+		(at 85.09 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e7ce942-7081-459f-8617-afdaf7aa49ed")
+		(property "Reference" "C602"
+			(at 88.9 103.505 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.22uF_25V"
+			(at 88.9 105.4099 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Janelia:C_0402_1005Metric"
+			(at 84.1248 100.33 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 106.68 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "490-12245-1-ND"
+			(at 80.01 111.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "CAP CER 0.22UF 25V X6S"
+			(at 77.47 114.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 85.09 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GRT155C81E224KE01D"
+			(at 85.09 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 85.09 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C126623"
+			(at 85.09 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ca5a772-99dd-4f50-a3a7-b667eecfe303")
+		)
+		(pin "2"
+			(uuid "389b7fb3-7548-41c1-bc86-ac1653412ce5")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "C602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:R_40k_100mW_0603")
+		(at 93.98 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1f57311-c8d1-4fc3-91e1-9abad03175f9")
+		(property "Reference" "R602"
+			(at 93.98 93.98 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "40k"
+			(at 93.98 96.52 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:R_0603_1608Metric"
+			(at 93.98 98.298 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "JLCPCB"
+			(at 91.44 91.948 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "C3016445"
+			(at 88.9 89.408 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "RES SMD 40k OHM 1% 100mW"
+			(at 86.36 86.868 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 93.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "VO"
+			(at 93.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SCR0603F40K"
+			(at 93.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3016445"
+			(at 93.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b93fbca5-c301-4afa-b44a-5c7b1e8fee74")
+		)
+		(pin "1"
+			(uuid "4c5373a0-8f78-4742-a695-b035074785c4")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "R602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:Speaker_13x13mm_8Ohm_700mW")
+		(at 214.63 93.98 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad1ccb34-13b1-4fd9-a627-e677a344805c")
+		(property "Reference" "SP601"
+			(at 218.44 95.25 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Speaker_13x13mm_8Ohm_700mW"
+			(at 218.44 97.79 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Janelia:Speaker_13x13mm_KLJ-01304T-08R07W"
+			(at 214.63 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.376 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 214.63 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Synopsis" "SPEAKER 8OHM 700MW"
+			(at 214.63 118.11 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KELIKING"
+			(at 214.63 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "KLJ-01304T-08R07W"
+			(at 214.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "JLCPCB"
+			(at 214.63 113.03 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "C18186315"
+			(at 214.63 115.57 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C18186315"
+			(at 214.63 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "188c383b-e62a-48f2-8c99-0bbe3e7ec743")
+		)
+		(pin "2"
+			(uuid "6599a64b-bc87-42f9-96a9-ac91236c129f")
+		)
+		(pin "3"
+			(uuid "25458f54-3cd7-4d8e-8a23-925e227f9e03")
+		)
+		(pin "1"
+			(uuid "3d69fbf0-6d12-49df-87b1-94d857b3f191")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "SP601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:C_0.22uF_25V_0402")
+		(at 132.08 124.46 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5bb2240-004d-4be2-895b-ab34b9a6244f")
+		(property "Reference" "C604"
+			(at 135.89 123.825 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.22uF_25V"
+			(at 135.89 125.7299 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Janelia:C_0402_1005Metric"
+			(at 131.1148 120.65 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 127 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 129.54 129.54 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "490-12245-1-ND"
+			(at 127 132.08 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "CAP CER 0.22UF 25V X6S"
+			(at 124.46 134.62 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 132.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GRT155C81E224KE01D"
+			(at 132.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 132.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C126623"
+			(at 132.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72146495-afac-41a6-b17c-f45575771f85")
+		)
+		(pin "2"
+			(uuid "78337132-1e80-4abf-b41e-44055a953457")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "C604")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:C_1uF_35V_0402")
+		(at 132.08 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "baee21dc-8908-4660-affd-db8f4205fd77")
+		(property "Reference" "C603"
+			(at 134.62 64.77 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF_35V"
+			(at 134.62 67.31 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Janelia:C_0402_1005Metric"
+			(at 133.0452 69.85 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 134.62 60.96 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "1276-6796-1-ND"
+			(at 137.16 58.42 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "CAP CER 1UF 35V X5R"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05A105KL5NRNC"
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307413"
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6958d077-a9cf-4325-8cc5-3cbce9dbdc07")
+		)
+		(pin "1"
+			(uuid "5774ee95-227a-46d9-8705-b335d2dff062")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/3ad4effc-6f5c-46f5-ab22-93378768066e"
+					(reference "C603")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

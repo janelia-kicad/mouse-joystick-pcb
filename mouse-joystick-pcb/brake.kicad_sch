@@ -1,815 +1,2023 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 681d1233-67fe-4ff2-8509-153d995db4e9)
-
-  (paper "A4")
-
-  (title_block
-    (title "mouse-joystick-pcb")
-    (date "2024-10-24")
-    (rev "1.0")
-    (company "Peter Polidoro")
-  )
-
-  (lib_symbols
-    (symbol "Janelia:CP_100uF_50V_8x10.2mm" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.254 1.778 0)
-        (effects (font (size 1.016 1.016)) (justify left))
-      )
-      (property "Value" "100uF_50V" (at 0 0 0)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Footprint" "Janelia:CAP_EEEHAH101UAP" (at -2.286 -0.762 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Datasheet" "" (at 0.254 1.778 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor" "Digi-Key" (at 2.794 4.318 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "PCE4713CT-ND" (at 5.334 6.858 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "CAP ALUM 100UF 20% 50V SMD" (at 7.874 9.398 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Manufacturer" "Panasonic Electronic Components" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "EEEHAH101UAP" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C336425" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Package" "SMD D8xL10.2mm" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "100uF 50V 110mA@120Hz ±20% SMD D8xL10.2mm Aluminum Electrolytic Capacitors - SMD ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "CP* Elko* TantalC* C*elec c_elec* SMD*_Pol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "CP_100uF_50V_8x10.2mm_0_1"
-        (rectangle (start -1.524 -0.3048) (end 1.524 -0.6858)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start -1.524 0.6858) (end 1.524 0.3048)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 1.524)
-            (xy -0.762 1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.016 1.27)
-            (xy -1.016 1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "CP_100uF_50V_8x10.2mm_1_1"
-        (pin passive line (at 0 2.54 270) (length 1.8542)
-          (name "~" (effects (font (size 1.016 1.016))))
-          (number "1" (effects (font (size 1.016 1.016))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 1.8542)
-          (name "~" (effects (font (size 1.016 1.016))))
-          (number "2" (effects (font (size 1.016 1.016))))
-        )
-      )
-    )
-    (symbol "Janelia:Conn_01x02_P3.5mm_TBH_Horizontal_Screw" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at -3.81 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x02_P3.5mm_TBH_Horizontal_Screw" (at 0 -12.7 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "Janelia:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal_Screw" (at 0 35.56 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 21.59 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer" "Phoenix Contact" (at 0 33.02 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "1844210" (at 0 27.94 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Synopsis" "TERM BLOCK HDR 2POS 90DEG 3.5MM" (at 0 25.4 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor" "Digi-Key" (at 0 30.48 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor Part Number" "277-2416-ND" (at 0 22.86 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Enable" "0" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Package" "Plugin P=3.5mm" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C3584780" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "12A 2 Straight Needle 1 3.5mm Green Plugin P=3.5mm Pluggable System Terminal Block ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x02_P3.5mm_TBH_Horizontal_Screw_1_1"
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 0.8636 -2.54)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 0.8636 0)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 0.8636 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (pin passive line (at 5.08 0 180) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Janelia:LED_DRIVER_LINEAR_BCR421U" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 0 10.16 0) (do_not_autoplace)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "40V_200mA" (at 20.32 25.4 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Footprint" "Janelia:SC-74-6_1.55x2.9mm_P0.95mm" (at 0 20.32 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 25.4 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Synopsis" "IC LED DRVR LIN PWM 200MA" (at 0 22.86 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Package" "SC-74-6" (at 0 15.24 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer" "Infineon Technologies" (at 0 33.02 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "BCR421UE6327" (at 0 27.94 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor" "Digi-Key" (at 0 30.48 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor Part Number" "BCR421UE6327HTSA1CT-ND" (at 0 17.78 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Enable" "0" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C112923" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "40V 1 Linear constant current drive 200mA 1.4V~40V SC-74-6 LED Drivers ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LED_DRIVER_LINEAR_BCR421U_0_1"
-        (rectangle (start -4.445 5.08) (end -3.175 2.54)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center -3.81 0) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (circle (center 0 -8.255) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -5.08 8.89)
-            (xy -5.08 6.35)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.762 0)
-            (xy -5.08 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 1.524)
-            (xy -0.635 -1.524)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -3.81)
-            (xy 5.08 -3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 1.27 -5.08)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 0.635 -5.08) (end 1.905 -7.62)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 1.27 -3.81) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "LED_DRIVER_LINEAR_BCR421U_1_1"
-        (rectangle (start -5.08 8.89) (end 5.08 -8.89)
-          (stroke (width 0) (type default))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy -4.445 -6.35)
-            (xy -3.175 -6.35)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -4.445 -3.81)
-            (xy -3.175 -3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 -3.81)
-            (xy -3.81 -5.08)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 0)
-            (xy -3.81 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 2.54)
-            (xy -3.81 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 0.635)
-            (xy 1.27 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -8.255)
-            (xy 0 -8.89)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 -6.35)
-            (xy -3.81 -8.255)
-            (xy 0 -8.255)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 5.08)
-            (xy -3.81 6.35)
-            (xy -5.08 6.35)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 -0.635)
-            (xy 1.27 -2.54)
-            (xy 1.27 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -8.255)
-            (xy 1.27 -8.255)
-            (xy 1.27 -7.62)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 2.54)
-            (xy 1.27 6.35)
-            (xy 5.08 6.35)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -4.445 -5.08)
-            (xy -3.175 -5.08)
-            (xy -3.81 -6.35)
-            (xy -4.445 -5.08)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -4.445 -2.54)
-            (xy -3.175 -2.54)
-            (xy -3.81 -3.81)
-            (xy -4.445 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.778)
-            (xy 0.508 -1.27)
-            (xy 1.016 -2.286)
-            (xy 0 -1.778)
-            (xy 0 -1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (circle (center 0 0) (radius 2.8194)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (pin input line (at -10.16 6.35 0) (length 5.08)
-          (name "VEN" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 6.35 180) (length 5.08)
-          (name "IOUT" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 6.35 180) (length 5.08) hide
-          (name "IOUT" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -13.97 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 6.35 180) (length 5.08) hide
-          (name "IOUT" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 -3.81 180) (length 5.08)
-          (name "REXT" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Janelia:R_30_0402" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 1.27 0 0) (do_not_autoplace)
-        (effects (font (size 1.016 1.016)) (justify left))
-      )
-      (property "Value" "30" (at 0 0 90) (do_not_autoplace)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Footprint" "Janelia:R_0402_1005Metric" (at -1.778 0 90)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Datasheet" "" (at 2.032 0 90)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Vendor" "JLCPCB" (at 4.572 2.54 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Vendor Part Number" "C3036820" (at 7.112 5.08 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Synopsis" "RES 30 OHM 1% 62.5mW" (at 9.652 7.62 90)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Manufacturer" "LIZ Elec" (at 0 15.875 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Manufacturer Part Number" "CR0402FF30R0G" (at 0 18.415 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Package" "0402" (at 0 20.32 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC" "C3036820" (at 0 22.225 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "62.5mW 50V ±1% 30Ω 0402 Chip Resistor - Surface Mount ROHS" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R? SM0603 SM0805 R?-* SM1206" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_30_0402_0_1"
-        (rectangle (start -1.016 3.81) (end 1.016 -3.81)
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_30_0402_1_1"
-        (pin passive line (at 0 6.35 270) (length 2.54)
-          (name "~" (effects (font (size 1.524 1.524))))
-          (number "1" (effects (font (size 1.524 1.524))))
-        )
-        (pin passive line (at 0 -6.35 90) (length 2.54)
-          (name "~" (effects (font (size 1.524 1.524))))
-          (number "2" (effects (font (size 1.524 1.524))))
-        )
-      )
-    )
-  )
-
-
-  (wire (pts (xy 182.88 68.58) (xy 182.88 66.04))
-    (stroke (width 0) (type default))
-    (uuid 142312fb-4eb4-4b1d-a7ad-e145fe120fbb)
-  )
-  (wire (pts (xy 151.13 92.71) (xy 151.13 95.25))
-    (stroke (width 0) (type default))
-    (uuid 19ae5945-5df5-44d4-8382-9299d923f545)
-  )
-  (wire (pts (xy 182.88 73.66) (xy 182.88 76.2))
-    (stroke (width 0) (type default))
-    (uuid 2614255c-71f7-4eb0-a2fd-dcb4a9b0a048)
-  )
-  (wire (pts (xy 148.59 82.55) (xy 151.13 82.55))
-    (stroke (width 0) (type default))
-    (uuid 3948a11b-51d7-4dce-936a-c319e669b688)
-  )
-  (wire (pts (xy 201.93 88.9) (xy 199.39 88.9))
-    (stroke (width 0) (type default))
-    (uuid 4d4623c5-4934-4d69-b57d-70c50f121f11)
-  )
-  (wire (pts (xy 138.43 102.87) (xy 138.43 105.41))
-    (stroke (width 0) (type default))
-    (uuid 7390e2de-cc46-47e3-8545-1fd3176da0a3)
-  )
-  (wire (pts (xy 151.13 107.95) (xy 151.13 110.49))
-    (stroke (width 0) (type default))
-    (uuid 7e9134a6-dd19-4124-807e-9f52733b799c)
-  )
-  (wire (pts (xy 88.9 49.53) (xy 91.44 49.53))
-    (stroke (width 0) (type default))
-    (uuid 90d8e797-49a1-469b-9f83-e59cc8271796)
-  )
-  (wire (pts (xy 201.93 86.36) (xy 199.39 86.36))
-    (stroke (width 0) (type default))
-    (uuid b46420bb-67c4-46c3-9b96-750b39ed60e4)
-  )
-  (wire (pts (xy 128.27 82.55) (xy 125.73 82.55))
-    (stroke (width 0) (type default))
-    (uuid b97aa788-c4ae-4a2b-a980-d24f93f07524)
-  )
-  (wire (pts (xy 88.9 46.99) (xy 91.44 46.99))
-    (stroke (width 0) (type default))
-    (uuid c09afc9c-65f8-4934-a1dc-94a99ab296c1)
-  )
-  (wire (pts (xy 148.59 92.71) (xy 151.13 92.71))
-    (stroke (width 0) (type default))
-    (uuid c2d922bf-3d51-41fc-b47c-0ce3232f8420)
-  )
-  (wire (pts (xy 88.9 52.07) (xy 91.44 52.07))
-    (stroke (width 0) (type default))
-    (uuid ff525b77-bf01-47f7-a680-d2722a9b635d)
-  )
-
-  (text "30 Ohm ~ 40 mA ~ 2.6 newton-cm" (at 157.48 102.87 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid f92c9f8c-a3b0-432c-889c-daa9dcff5743)
-  )
-
-  (label "VS" (at 199.39 86.36 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 1f5330a4-3644-46b8-8faf-43f4a9416cdb)
-  )
-  (label "VS" (at 182.88 66.04 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 2e393554-6ac1-4270-9dad-5afc3aabff53)
-  )
-  (label "IOUT" (at 199.39 88.9 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 32589944-dece-48c3-b109-f42b3e14039d)
-  )
-  (label "GND" (at 138.43 105.41 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 4cc13aeb-a376-4d6c-8b82-b5cdf4570860)
-  )
-  (label "IOUT" (at 151.13 82.55 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 6b92c645-9934-4c8f-ad3e-ab80f2c70073)
-  )
-  (label "BRAKE_PWM" (at 125.73 82.55 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 828e67f1-5014-4b82-a79d-dfdc1b661f0c)
-  )
-  (label "GND" (at 182.88 76.2 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 89e67228-0c75-46fd-8fd9-21c361300c94)
-  )
-  (label "GND" (at 151.13 110.49 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 97107a56-bd5a-4608-b56d-ce5f78b7d2cc)
-  )
-  (label "VS" (at 91.44 46.99 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 9ac763d2-2444-4094-bec6-4f98172b089d)
-  )
-  (label "BRAKE_PWM" (at 91.44 52.07 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid cfd4487f-a3d4-4a8b-b445-87cc55a69dbc)
-  )
-  (label "GND" (at 91.44 49.53 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid fc60a807-f124-460b-a120-fbc9b06a00f0)
-  )
-
-  (hierarchical_label "GND" (shape passive) (at 88.9 49.53 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 2d54b144-e495-461b-9065-778ff2360687)
-  )
-  (hierarchical_label "BRAKE_PWM" (shape input) (at 88.9 52.07 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 313eff95-2c9a-4fd1-9ee6-47bbc2d91ba3)
-  )
-  (hierarchical_label "VS" (shape passive) (at 88.9 46.99 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid be4016d8-2e5e-4d73-bf75-3970b7ddac3f)
-  )
-
-  (symbol (lib_id "Janelia:CP_100uF_50V_8x10.2mm") (at 182.88 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 24dcc0f0-00e5-457a-be1d-96b741ffbd63)
-    (property "Reference" "C801" (at 185.42 69.9389 0)
-      (effects (font (size 1.016 1.016)) (justify left))
-    )
-    (property "Value" "100uF_50V" (at 185.42 71.8438 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Footprint" "Janelia:CAP_EEEHAH101UAP" (at 180.594 71.882 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Datasheet" "" (at 183.134 69.342 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 185.674 66.802 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "PCE4713CT-ND" (at 188.214 64.262 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "CAP ALUM 100UF 20% 50V SMD" (at 190.754 61.722 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "Panasonic Electronic Components" (at 182.88 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "EEEHAH101UAP" (at 182.88 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C336425" (at 182.88 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SMD D8xL10.2mm" (at 182.88 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 3a0abb9b-c580-4de4-9891-d90284fcbd4f))
-    (pin "1" (uuid d12c56b6-d70a-46da-adff-6f35836e48d9))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
-          (reference "C801") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:LED_DRIVER_LINEAR_BCR421U") (at 138.43 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 506bc936-fc06-4cb3-a8e1-a7492527a31a)
-    (property "Reference" "U801" (at 138.43 78.74 0) (do_not_autoplace)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "40V_200mA" (at 158.75 63.5 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Janelia:SC-74-6_1.55x2.9mm_P0.95mm" (at 138.43 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 138.43 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Synopsis" "IC LED DRVR LIN PWM 200MA" (at 138.43 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "SC-74-6" (at 138.43 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Infineon Technologies" (at 138.43 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "BCR421UE6327" (at 138.43 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 138.43 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Part Number" "BCR421UE6327HTSA1CT-ND" (at 138.43 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 138.43 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C112923" (at 138.43 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "5" (uuid b6bd72e5-51d9-4fbd-997a-1aa67015c50e))
-    (pin "6" (uuid fff37133-753e-441c-adc9-f6c7b503c6e9))
-    (pin "2" (uuid 3374457d-9a3c-4527-86a4-f8dcb88909fe))
-    (pin "1" (uuid a49a8e50-fc0f-4931-8a11-ef83b6f31937))
-    (pin "3" (uuid b3334605-d8fe-428f-ba9f-bf3742c1af24))
-    (pin "4" (uuid 3d1a5aa6-8dce-4d90-a036-b6aa5889eefc))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
-          (reference "U801") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:Conn_01x02_P3.5mm_TBH_Horizontal_Screw") (at 207.01 88.9 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 58454097-cc3d-4589-9d0c-5b5f6a6723c4)
-    (property "Reference" "J801" (at 208.28 87.63 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "Conn_01x02_P3.5mm_TBH_Horizontal_Screw" (at 207.01 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Janelia:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal_Screw" (at 207.01 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 207.01 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Phoenix Contact" (at 207.01 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "1844210" (at 207.01 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Synopsis" "TERM BLOCK HDR 2POS 90DEG 3.5MM" (at 207.01 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor" "Digi-Key" (at 207.01 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Part Number" "277-2416-ND" (at 207.01 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 207.01 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "Plugin P=3.5mm" (at 207.01 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C3584780" (at 207.01 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 0e05823f-c171-485b-8487-4d82229a460b))
-    (pin "1" (uuid 64c01d47-9d80-4303-8492-123dbecd2944))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
-          (reference "J801") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Janelia:R_30_0402") (at 151.13 101.6 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c8d96cb3-f791-46d8-98e1-168965f1c81b)
-    (property "Reference" "R801" (at 152.4 101.6 0) (do_not_autoplace)
-      (effects (font (size 1.016 1.016)) (justify left))
-    )
-    (property "Value" "30" (at 151.13 101.6 90) (do_not_autoplace)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "Janelia:R_0402_1005Metric" (at 149.352 101.6 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Datasheet" "" (at 153.162 101.6 90)
-      (effects (font (size 0.762 0.762)) hide)
-    )
-    (property "Vendor" "JLCPCB" (at 155.702 99.06 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Vendor Part Number" "C3036820" (at 158.242 96.52 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Synopsis" "RES 30 OHM 1% 62.5mW" (at 160.782 93.98 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "LIZ Elec" (at 151.13 85.725 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "CR0402FF30R0G" (at 151.13 83.185 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "0402" (at 151.13 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C3036820" (at 151.13 79.375 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e24c1251-84cd-4bbc-997c-023df414ab57))
-    (pin "2" (uuid 9bd85964-b414-4bd1-9f40-5606478c3487))
-    (instances
-      (project "mouse-joystick-pcb"
-        (path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
-          (reference "R801") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "681d1233-67fe-4ff2-8509-153d995db4e9")
+	(paper "A4")
+	(title_block
+		(title "mouse-joystick-pcb")
+		(date "2024-10-24")
+		(rev "1.0")
+		(company "Peter Polidoro")
+	)
+	(lib_symbols
+		(symbol "Janelia:CP_100uF_50V_8x10.2mm"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100uF_50V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:CAP_EEEHAH101UAP"
+				(at -2.286 -0.762 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100uF 50V 110mA@120Hz ±20% SMD D8xL10.2mm Aluminum Electrolytic Capacitors - SMD ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 2.794 4.318 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "PCE4713CT-ND"
+				(at 5.334 6.858 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "CAP ALUM 100UF 20% 50V SMD"
+				(at 7.874 9.398 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Panasonic Electronic Components"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "EEEHAH101UAP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C336425"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "SMD D8xL10.2mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP* Elko* TantalC* C*elec c_elec* SMD*_Pol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CP_100uF_50V_8x10.2mm_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CP_100uF_50V_8x10.2mm_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:Conn_01x02_P3.5mm_TBH_Horizontal_Screw"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -3.81 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_P3.5mm_TBH_Horizontal_Screw"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Janelia:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal_Screw"
+				(at 0 35.56 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "12A 2 Straight Needle 1 3.5mm Green Plugin P=3.5mm Pluggable System Terminal Block ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Phoenix Contact"
+				(at 0 33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "1844210"
+				(at 0 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "TERM BLOCK HDR 2POS 90DEG 3.5MM"
+				(at 0 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 0 30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "277-2416-ND"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "Plugin P=3.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3584780"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_P3.5mm_TBH_Horizontal_Screw_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:LED_DRIVER_LINEAR_BCR421U"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "40V_200mA"
+				(at 20.32 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Janelia:SC-74-6_1.55x2.9mm_P0.95mm"
+				(at 0 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 1 Linear constant current drive 200mA 1.4V~40V SC-74-6 LED Drivers ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "IC LED DRVR LIN PWM 200MA"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "SC-74-6"
+				(at 0 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Infineon Technologies"
+				(at 0 33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "BCR421UE6327"
+				(at 0 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 0 30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "BCR421UE6327HTSA1CT-ND"
+				(at 0 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C112923"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_DRIVER_LINEAR_BCR421U_0_1"
+				(polyline
+					(pts
+						(xy -5.08 8.89) (xy -5.08 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.445 5.08)
+					(end -3.175 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 1.524) (xy -0.635 -1.524)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -8.255)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.635 -5.08)
+					(end 1.905 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.81) (xy 5.08 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -3.81)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "LED_DRIVER_LINEAR_BCR421U_1_1"
+				(rectangle
+					(start -5.08 8.89)
+					(end 5.08 -8.89)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -2.54) (xy -3.175 -2.54) (xy -3.81 -3.81) (xy -4.445 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -3.81) (xy -3.175 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -5.08) (xy -3.175 -5.08) (xy -3.81 -6.35) (xy -4.445 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -6.35) (xy -3.175 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 5.08) (xy -3.81 6.35) (xy -5.08 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 2.54) (xy -3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -3.81 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -3.81) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -6.35) (xy -3.81 -8.255) (xy 0 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0.635) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -0.635) (xy 1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0.508 -1.27) (xy 1.016 -2.286) (xy 0 -1.778) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -8.255) (xy 0 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -8.255) (xy 1.27 -8.255) (xy 1.27 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 1.27 6.35) (xy 5.08 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 6.35 0)
+					(length 5.08)
+					(name "VEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -13.97 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 6.35 180)
+					(length 5.08)
+					(name "IOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 6.35 180)
+					(length 5.08)
+					(hide yes)
+					(name "IOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 6.35 180)
+					(length 5.08)
+					(hide yes)
+					(name "IOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -3.81 180)
+					(length 5.08)
+					(name "REXT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Janelia:R_30_0402"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 1.27 0 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "30"
+				(at 0 0 90)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "Janelia:R_0402_1005Metric"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "62.5mW 50V ±1% 30Ω 0402 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "JLCPCB"
+				(at 4.572 2.54 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor Part Number" "C3036820"
+				(at 7.112 5.08 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Synopsis" "RES 30 OHM 1% 62.5mW"
+				(at 9.652 7.62 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "LIZ Elec"
+				(at 0 15.875 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "CR0402FF30R0G"
+				(at 0 18.415 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0402"
+				(at 0 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3036820"
+				(at 0 22.225 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R? SM0603 SM0805 R?-* SM1206"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_30_0402_0_1"
+				(rectangle
+					(start -1.016 3.81)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_30_0402_1_1"
+				(pin passive line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "30 Ohm ~ 40 mA ~ 2.6 newton-cm"
+		(exclude_from_sim no)
+		(at 157.48 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f92c9f8c-a3b0-432c-889c-daa9dcff5743")
+	)
+	(wire
+		(pts
+			(xy 182.88 68.58) (xy 182.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "142312fb-4eb4-4b1d-a7ad-e145fe120fbb")
+	)
+	(wire
+		(pts
+			(xy 151.13 92.71) (xy 151.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ae5945-5df5-44d4-8382-9299d923f545")
+	)
+	(wire
+		(pts
+			(xy 182.88 73.66) (xy 182.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2614255c-71f7-4eb0-a2fd-dcb4a9b0a048")
+	)
+	(wire
+		(pts
+			(xy 148.59 82.55) (xy 151.13 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3948a11b-51d7-4dce-936a-c319e669b688")
+	)
+	(wire
+		(pts
+			(xy 201.93 88.9) (xy 199.39 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d4623c5-4934-4d69-b57d-70c50f121f11")
+	)
+	(wire
+		(pts
+			(xy 138.43 102.87) (xy 138.43 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7390e2de-cc46-47e3-8545-1fd3176da0a3")
+	)
+	(wire
+		(pts
+			(xy 151.13 107.95) (xy 151.13 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e9134a6-dd19-4124-807e-9f52733b799c")
+	)
+	(wire
+		(pts
+			(xy 88.9 49.53) (xy 91.44 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90d8e797-49a1-469b-9f83-e59cc8271796")
+	)
+	(wire
+		(pts
+			(xy 201.93 86.36) (xy 199.39 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46420bb-67c4-46c3-9b96-750b39ed60e4")
+	)
+	(wire
+		(pts
+			(xy 128.27 82.55) (xy 125.73 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b97aa788-c4ae-4a2b-a980-d24f93f07524")
+	)
+	(wire
+		(pts
+			(xy 88.9 46.99) (xy 91.44 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c09afc9c-65f8-4934-a1dc-94a99ab296c1")
+	)
+	(wire
+		(pts
+			(xy 148.59 92.71) (xy 151.13 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d922bf-3d51-41fc-b47c-0ce3232f8420")
+	)
+	(wire
+		(pts
+			(xy 88.9 52.07) (xy 91.44 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff525b77-bf01-47f7-a680-d2722a9b635d")
+	)
+	(label "VS"
+		(at 199.39 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1f5330a4-3644-46b8-8faf-43f4a9416cdb")
+	)
+	(label "VS"
+		(at 182.88 66.04 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e393554-6ac1-4270-9dad-5afc3aabff53")
+	)
+	(label "IOUT"
+		(at 199.39 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "32589944-dece-48c3-b109-f42b3e14039d")
+	)
+	(label "GND"
+		(at 138.43 105.41 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4cc13aeb-a376-4d6c-8b82-b5cdf4570860")
+	)
+	(label "IOUT"
+		(at 151.13 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b92c645-9934-4c8f-ad3e-ab80f2c70073")
+	)
+	(label "BRAKE_PWM"
+		(at 125.73 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "828e67f1-5014-4b82-a79d-dfdc1b661f0c")
+	)
+	(label "GND"
+		(at 182.88 76.2 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "89e67228-0c75-46fd-8fd9-21c361300c94")
+	)
+	(label "GND"
+		(at 151.13 110.49 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "97107a56-bd5a-4608-b56d-ce5f78b7d2cc")
+	)
+	(label "VS"
+		(at 91.44 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ac763d2-2444-4094-bec6-4f98172b089d")
+	)
+	(label "BRAKE_PWM"
+		(at 91.44 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfd4487f-a3d4-4a8b-b445-87cc55a69dbc")
+	)
+	(label "GND"
+		(at 91.44 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc60a807-f124-460b-a120-fbc9b06a00f0")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 88.9 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d54b144-e495-461b-9065-778ff2360687")
+	)
+	(hierarchical_label "BRAKE_PWM"
+		(shape input)
+		(at 88.9 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "313eff95-2c9a-4fd1-9ee6-47bbc2d91ba3")
+	)
+	(hierarchical_label "VS"
+		(shape passive)
+		(at 88.9 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be4016d8-2e5e-4d73-bf75-3970b7ddac3f")
+	)
+	(symbol
+		(lib_id "Janelia:CP_100uF_50V_8x10.2mm")
+		(at 182.88 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24dcc0f0-00e5-457a-be1d-96b741ffbd63")
+		(property "Reference" "C801"
+			(at 185.42 69.9389 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF_50V"
+			(at 185.42 71.8438 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Janelia:CAP_EEEHAH101UAP"
+			(at 180.594 71.882 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 183.134 69.342 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 185.674 66.802 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "PCE4713CT-ND"
+			(at 188.214 64.262 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "CAP ALUM 100UF 20% 50V SMD"
+			(at 190.754 61.722 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 182.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "EEEHAH101UAP"
+			(at 182.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C336425"
+			(at 182.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SMD D8xL10.2mm"
+			(at 182.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a0abb9b-c580-4de4-9891-d90284fcbd4f")
+		)
+		(pin "1"
+			(uuid "d12c56b6-d70a-46da-adff-6f35836e48d9")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
+					(reference "C801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:LED_DRIVER_LINEAR_BCR421U")
+		(at 138.43 88.9 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "506bc936-fc06-4cb3-a8e1-a7492527a31a")
+		(property "Reference" "U801"
+			(at 138.43 78.74 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "40V_200mA"
+			(at 158.75 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Janelia:SC-74-6_1.55x2.9mm_P0.95mm"
+			(at 138.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Synopsis" "IC LED DRVR LIN PWM 200MA"
+			(at 138.43 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SC-74-6"
+			(at 138.43 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BCR421UE6327"
+			(at 138.43 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 138.43 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "BCR421UE6327HTSA1CT-ND"
+			(at 138.43 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C112923"
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "b6bd72e5-51d9-4fbd-997a-1aa67015c50e")
+		)
+		(pin "6"
+			(uuid "fff37133-753e-441c-adc9-f6c7b503c6e9")
+		)
+		(pin "2"
+			(uuid "3374457d-9a3c-4527-86a4-f8dcb88909fe")
+		)
+		(pin "1"
+			(uuid "a49a8e50-fc0f-4931-8a11-ef83b6f31937")
+		)
+		(pin "3"
+			(uuid "b3334605-d8fe-428f-ba9f-bf3742c1af24")
+		)
+		(pin "4"
+			(uuid "3d1a5aa6-8dce-4d90-a036-b6aa5889eefc")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
+					(reference "U801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:Conn_01x02_P3.5mm_TBH_Horizontal_Screw")
+		(at 207.01 88.9 180)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58454097-cc3d-4589-9d0c-5b5f6a6723c4")
+		(property "Reference" "J801"
+			(at 208.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_P3.5mm_TBH_Horizontal_Screw"
+			(at 207.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Janelia:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal_Screw"
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 207.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "1844210"
+			(at 207.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "TERM BLOCK HDR 2POS 90DEG 3.5MM"
+			(at 207.01 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 207.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "277-2416-ND"
+			(at 207.01 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "Plugin P=3.5mm"
+			(at 207.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3584780"
+			(at 207.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0e05823f-c171-485b-8487-4d82229a460b")
+		)
+		(pin "1"
+			(uuid "64c01d47-9d80-4303-8492-123dbecd2944")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
+					(reference "J801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Janelia:R_30_0402")
+		(at 151.13 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8d96cb3-f791-46d8-98e1-168965f1c81b")
+		(property "Reference" "R801"
+			(at 152.4 101.6 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30"
+			(at 151.13 101.6 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "Janelia:R_0402_1005Metric"
+			(at 149.352 101.6 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.162 101.6 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "JLCPCB"
+			(at 155.702 99.06 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor Part Number" "C3036820"
+			(at 158.242 96.52 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Synopsis" "RES 30 OHM 1% 62.5mW"
+			(at 160.782 93.98 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "LIZ Elec"
+			(at 151.13 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CR0402FF30R0G"
+			(at 151.13 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 151.13 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3036820"
+			(at 151.13 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e24c1251-84cd-4bbc-997c-023df414ab57")
+		)
+		(pin "2"
+			(uuid "9bd85964-b414-4bd1-9f40-5606478c3487")
+		)
+		(instances
+			(project "mouse-joystick-pcb"
+				(path "/df2b2e89-e055-4140-95de-f1df723db034/cc53e4cb-28ca-4497-a17f-97087cae7de9"
+					(reference "R801")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
