@@ -6,9 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "mouse-joystick-pcb")
-		(date "2024-10-24")
-		(rev "1.0")
-		(company "Peter Polidoro")
+		(date "2026-01-15")
+		(rev "1.1")
+		(company "Janelia Research Campus")
+		(comment 1 "Peter Polidoro")
 	)
 	(lib_symbols
 		(symbol "Janelia:Barrel_Jack_Switch_SMD_RA_2.1_XKB"
@@ -2207,6 +2208,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "24V\n>2A"
+		(exclude_from_sim no)
+		(at 123.444 80.264 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "c333126b-c8d7-4a12-a474-87aff3e3d84c")
+	)
 	(no_connect
 		(at 180.34 119.38)
 		(uuid "2263d940-eb0b-46e1-bb60-665d401935af")
@@ -3278,7 +3291,7 @@
 		(lib_id "Janelia:D_50V_15A")
 		(at 165.1 67.31 180)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)

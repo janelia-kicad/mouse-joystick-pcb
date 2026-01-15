@@ -329,7 +329,7 @@
     "opengl_holes_disableOnMove": false,
     "opengl_render_bbox_only_OnMove": false,
     "opengl_selection_color": "rgb(0, 255, 0)",
-    "opengl_show_model_bbox": true,
+    "opengl_show_model_bbox": false,
     "opengl_show_off_board_silk": false,
     "opengl_thickness_disableOnMove": false,
     "opengl_vias_disableOnMove": false,

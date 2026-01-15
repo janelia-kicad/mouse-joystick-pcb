@@ -6,9 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "mouse-joystick-pcb")
-		(date "2024-10-24")
-		(rev "1.0")
-		(company "Peter Polidoro")
+		(date "2026-01-15")
+		(rev "1.1")
+		(company "Janelia Research Campus")
+		(comment 1 "Peter Polidoro")
 	)
 	(lib_symbols
 		(symbol "Janelia:Amplifier_Audio_TPA6204A1DRBR"
@@ -2261,7 +2262,7 @@
 		(lib_id "Janelia:Speaker_13x13mm_8Ohm_700mW")
 		(at 214.63 93.98 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)

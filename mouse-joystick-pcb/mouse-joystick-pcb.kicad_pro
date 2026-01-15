@@ -602,7 +602,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../documentation/3dmodels/pcb.step",
+      "step": "../../../../tmp/mouse-joystick-pcb.glb",
       "svg": "",
       "vrml": ""
     },

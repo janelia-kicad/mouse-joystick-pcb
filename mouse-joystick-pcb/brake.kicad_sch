@@ -6,9 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "mouse-joystick-pcb")
-		(date "2024-10-24")
-		(rev "1.0")
-		(company "Peter Polidoro")
+		(date "2026-01-15")
+		(rev "1.1")
+		(company "Janelia Research Campus")
+		(comment 1 "Peter Polidoro")
 	)
 	(lib_symbols
 		(symbol "Janelia:CP_100uF_50V_8x10.2mm"
@@ -1614,7 +1615,7 @@
 		(lib_id "Janelia:LED_DRIVER_LINEAR_BCR421U")
 		(at 138.43 88.9 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -1759,7 +1760,7 @@
 		(lib_id "Janelia:Conn_01x02_P3.5mm_TBH_Horizontal_Screw")
 		(at 207.01 88.9 180)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
